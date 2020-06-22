@@ -1,0 +1,29 @@
+@import '../styles/variables';
+
+.intro {
+  padding-top: 50px;
+  margin: 50px 50px 100px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  column-gap: 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.container {
+  margin: auto 0 0 auto;
+  max-width: 450px;
+}
+
+.heading {
+  color: $black;
+}
+
+.text {
+  color: $grey;
+  line-height: 1.75;
+  margin: 0;
+}
