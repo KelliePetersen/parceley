@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+$cardHeight: 450px;
+
+.card {
+  position: relative;
+  height: $cardHeight;
+  min-width: calc(#{$cardHeight} / 3 * 2);
+  width: calc(#{$cardHeight} / 3 * 2);
+  max-width: 20%;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  padding: 80px 30px 30px;
+  border-radius: 10px;
+}
+
+.image {
+  position: absolute;
+  top: calc(-(#{$cardHeight} - 20px) / 2);
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(#{$cardHeight} - 20px);
+  height: calc(#{$cardHeight} - 20px);
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.title {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.description {
+  color: $grey;
+}
+
+.info {
+  color: $primary;
+  font-size: 0.875rem;
+}
