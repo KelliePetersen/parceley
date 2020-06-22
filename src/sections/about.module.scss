@@ -1,0 +1,25 @@
+@import '../styles/variables';
+
+.about {
+  padding-top: 50px;
+  margin: 150px 50px;
+  text-align: center;
+}
+
+.heading {
+  color: $black;
+  margin-bottom: 20px;
+}
+
+.subheading {
+  color: $grey;
+  line-height: 2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  column-gap: 50px;
+  width: max-content;
+  margin: 60px auto 0;
+}
