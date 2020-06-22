@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+$cardHeight: 300px;
+
+.card {
+  height: $cardHeight;
+  min-width: $cardHeight;
+  width: $cardHeight;
+  max-width: $cardHeight;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.image {
+  width: 70px;
+  height: 70px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.title {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: $grey;
+  font-size: 0.875rem;
+}
