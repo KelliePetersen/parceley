@@ -2,7 +2,7 @@
 @import '../../styles/variables';
 
 .header {
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,4 +13,9 @@
   letter-spacing: 1px;
   transition: background 0.2s;
   color: $black;
+}
+
+.active {
+  position: fixed;
+  background-color: white;
 }
