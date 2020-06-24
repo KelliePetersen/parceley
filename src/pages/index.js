@@ -6,6 +6,7 @@ import Features from "../sections/features"
 import FeaturesLeft from "../sections/featuresLeft"
 import Testimonials from "../sections/testimonials"
 import FeaturedItems from "../components/featuredItems/featuredItems"
+import RecipeMenu from "../components/recipeMenu/recipeMenu"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <FeaturedItems />
     <Features />
     <FeaturesLeft />
+    <RecipeMenu />
     <Testimonials />
   </Layout>
 )

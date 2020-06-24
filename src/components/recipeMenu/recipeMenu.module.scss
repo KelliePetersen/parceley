@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.recipeMenu {
+  padding-top: 50px;
+  margin: 100px 50px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.tab {
+  margin-top: 40px;
+}
+
+.tablink {
+  background-color: transparent;
+  border: none;
+  color: $light;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0;
+  margin-right: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
+  column-gap: 40px;
+  row-gap: 40px;
+  margin-top: 50px;
+}
