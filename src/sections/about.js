@@ -4,7 +4,7 @@ import styles from './about.module.scss'
 
 const About = () => {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="about">
       <h2 className={styles.heading}>How it works</h2>
       <p className={styles.subheading}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       <br /> Maec enas pharetra sit amet nunc.</p>

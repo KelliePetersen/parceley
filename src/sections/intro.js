@@ -4,7 +4,7 @@ import IntroItemCard from '../components/introItemCard/introItemCard'
 
 const Intro = () => {
   return (
-    <section className={styles.intro} id="about">
+    <section className={styles.intro}>
       <div className={styles.wrapper}>
         <IntroItemCard image='bowl-small.png' title='Grilled Chicken Salad' description='Real chicken' info='980kj' />
         <IntroItemCard image='bowl-small.png' title='Grilled Chicken Salad' description='Real chicken' info='980kj' />
