@@ -3,6 +3,8 @@
 
 .header {
   position: absolute;
+  top: 10px;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,5 +19,6 @@
 
 .active {
   position: fixed;
+  top: 0;
   background-color: white;
 }
