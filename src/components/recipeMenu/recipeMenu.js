@@ -1,4 +1,5 @@
 import React from 'react'
+import RecipeCard from '../recipeCard/recipeCard'
 import styles from './recipeMenu.module.scss'
 
 const RecipeMenu = () => {
@@ -14,14 +15,14 @@ const RecipeMenu = () => {
           <button type="button" className={styles.tablink} style={{marginRight: '0'}}>Snacks</button>
         </div>
         <div className={styles.grid}>
-          <div style={{height: '300px', width: '250px', backgroundColor: '#333'}}></div>
-          <div style={{height: '300px', width: '250px', backgroundColor: '#333'}}></div>
-          <div style={{height: '300px', width: '250px', backgroundColor: '#333'}}></div>
-          <div style={{height: '300px', width: '250px', backgroundColor: '#333'}}></div>
-          <div style={{height: '300px', width: '250px', backgroundColor: '#333'}}></div>
-          <div style={{height: '300px', width: '250px', backgroundColor: '#333'}}></div>
-          <div style={{height: '300px', width: '250px', backgroundColor: '#333'}}></div>
-          <div style={{height: '300px', width: '250px', backgroundColor: '#333'}}></div>
+          <RecipeCard image="burger.jpg" title="Grilled Salad" description="Real chicken" info="980kj" />
+          <RecipeCard image="burger.jpg" title="Grilled Salad" description="Real chicken" info="980kj" />
+          <RecipeCard image="burger.jpg" title="Grilled Salad" description="Real chicken" info="980kj" />
+          <RecipeCard image="burger.jpg" title="Grilled Salad" description="Real chicken" info="980kj" />
+          <RecipeCard image="burger.jpg" title="Grilled Salad" description="Real chicken" info="980kj" />
+          <RecipeCard image="burger.jpg" title="Grilled Salad" description="Real chicken" info="980kj" />
+          <RecipeCard image="burger.jpg" title="Grilled Salad" description="Real chicken" info="980kj" />
+          <RecipeCard image="burger.jpg" title="Grilled Salad" description="Real chicken" info="980kj" />
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1200px;
+  width: max-content;
 }
 
 .tab {
@@ -29,5 +29,5 @@
   grid-template-columns: max-content max-content max-content max-content;
   column-gap: 40px;
   row-gap: 40px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
