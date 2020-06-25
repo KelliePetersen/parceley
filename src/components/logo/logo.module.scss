@@ -1,9 +1,10 @@
 @import '../../styles/variables';
 
 .logo {
-  font-family: "Script MT Bold";
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-family: "Lato";
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.1;
 
   & > span {
     color: $primary;
