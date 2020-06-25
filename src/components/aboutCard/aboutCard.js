@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from '../image'
 import styles from './aboutCard.module.scss'
 
 const AboutCard = ({ image, title, description }) => {
