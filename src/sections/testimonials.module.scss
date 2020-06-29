@@ -1,0 +1,17 @@
+@import '../styles/variables';
+
+.testimonials {
+  text-align: center;
+  margin: 100px 50px 200px;
+}
+
+.subheading {
+  color: $light;
+  line-height: 2;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 50px;
+}
