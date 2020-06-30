@@ -1,0 +1,40 @@
+@import '../styles/variables';
+
+.card {
+  position: relative;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 40px 40px 40px 100px;
+  text-align: left;
+  width: 400px;
+}
+
+.name {
+  margin: 0 10px 20px 0;
+  display: inline-block;
+}
+
+.location {
+  font-size: 0.75rem;
+  color: $light;
+  margin: 0;
+  display: inline;
+}
+
+.description {
+  color: $grey;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+  background-color: $grey;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
