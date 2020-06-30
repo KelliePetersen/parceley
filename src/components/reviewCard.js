@@ -8,7 +8,14 @@ const ReviewCard = ({ image, name, location, description }) => {
       <div className={styles.image}><Image filename={image} /></div>
       <h4 className={styles.name}>{name}</h4>
       <p className={styles.location}>{location}</p>
-      <p className={styles.description}>{description}</p>
+      <p className={description ? styles.description : styles.empty}>{description}</p>
+      <div>
+        <div className={styles.star}>★</div>
+        <div className={styles.star}>★</div>
+        <div className={styles.star}>★</div>
+        <div className={styles.star}>★</div>
+        <div className={styles.star}>★</div>
+      </div>
     </div>
   )
 }
