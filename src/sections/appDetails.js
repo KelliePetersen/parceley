@@ -11,20 +11,24 @@ const AppDetails = () => {
           <div className={styles.phone}></div>
         </div>
         <div>
-          <h2 className={styles.heading}>Delicious food is waiting for you</h2>
-          <p className={styles.subheading}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          <h2 className={styles.heading}>Delicious food <br />is waiting for you</h2>
+          <p className={styles.subheading}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> 
           Maec enas pharetra sit amet nunc.</p>
           <div className={styles.card}>
             <div className={styles.icon}></div>
-            <h4 className={styles.title}>Lorem Ipsum</h4>
-            <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Maec enas pharetra sit amet nunc.</p>
+            <div>
+              <h4 className={styles.title}>Lorem Ipsum</h4>
+              <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Maec enas pharetra sit amet nunc.</p>
+            </div>
           </div>
           <div className={styles.card}>
             <div className={styles.icon}></div>
-            <h4 className={styles.title}>Lorem Ipsum</h4>
-            <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Maec enas pharetra sit amet nunc.</p>
+            <div>
+              <h4 className={styles.title}>Lorem Ipsum</h4>
+              <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Maec enas pharetra sit amet nunc.</p>
+            </div>
           </div>
         </div>
       </div>

@@ -1,3 +1,13 @@
 .appDetails {
-  margin: 100px 50px;
+  margin: 150px 50px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 50px 320px;
 }
