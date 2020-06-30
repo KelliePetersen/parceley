@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from './image'
 
 const ReviewCard = ({ image, name, location, description }) => {
   return (
