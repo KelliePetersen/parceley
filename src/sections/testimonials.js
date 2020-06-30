@@ -9,6 +9,7 @@ const Testimonials = () => {
       <p className={styles.subheading}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
         Maec enas pharetra sit amet nunc.</p>
       <div className={styles.grid}>
+      <ReviewCard name="Jane Doe" location="NY, USA" />
       <ReviewCard 
         name="Jane Doe" 
         location="NY, USA" 
@@ -16,7 +17,6 @@ const Testimonials = () => {
         adipisc elit. Maec enas pharet
         sit amet nunc consectur."
       />
-      <ReviewCard name="Jane Doe" location="NY, USA" />
       <ReviewCard name="Jane Doe" location="NY, USA" />
       <ReviewCard name="Jane Doe" location="NY, USA" />
       <ReviewCard name="Jane Doe" location="NY, USA" />

@@ -5,10 +5,21 @@
   background-color: white;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
   border-radius: 10px;
-  padding: 30px 30px 30px 80px;
+  padding: 20px 30px 20px 70px;
   text-align: left;
-  width: 380px;
+  width: 370px;
   height: max-content;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+  background-color: $grey;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .name {
@@ -27,26 +38,26 @@
   color: $grey;
   font-size: 0.875rem;
   line-height: 1.5;
-  margin: 10px 0 10px;
-}
-
-.empty {
-  margin: 0;
-}
-
-.image {
-  position: absolute;
-  top: 50%;
-  left: -50px;
-  transform: translateY(-50%);
-  background-color: $grey;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  margin: 5px 0 5px;
 }
 
 .star {
   display: inline-block;
   color: $primary;
   font-size: 1.25rem;
+  cursor: default;
+}
+
+.smallCard {
+  width: 325px;
+
+  .image {
+    width: 75px;
+    height: 75px;
+    left: -37.5px;
+  }
+
+  .description {
+    margin: 0;
+  }
 }
