@@ -5,10 +5,10 @@ const AppDetails = () => {
   return (
     <section className={styles.appDetails} id="appDetails">
       <div className={styles.wrapper}>
-        <div>
+        <div style={{position: 'relative'}}>
           <div className={styles.background}></div>
           <div className={styles.phone}></div>
-          <div className={styles.phone}></div>
+          <div className={styles.phone} style={{marginLeft: '40px', position: 'relative', top: '40px'}}></div>
         </div>
         <div>
           <h2 className={styles.heading}>Delicious food <br />is waiting for you</h2>
