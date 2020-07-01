@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from './appDetails.module.scss'
+import styles from './featuresLeft.module.scss'
 
-const AppDetails = () => {
+const FeaturesLeft = () => {
   return (
-    <section className={styles.appDetails} id="features">
+    <section className={styles.featuresLeft} id="features">
       <div className={styles.wrapper}>
         <div style={{position: 'relative'}}>
           <div className={styles.background}></div>
@@ -36,4 +36,4 @@ const AppDetails = () => {
   )
 }
 
-export default AppDetails
+export default FeaturesLeft
