@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from './featuresLeft.module.scss'
+import styles from './features.module.scss'
 import AppDescription from '../components/appDescription'
 
 const FeaturesLeft = () => {
   return (
-    <section className={styles.featuresLeft}>
-      <div className={styles.wrapper}>
+    <section className={styles.features}>
+      <div className={styles.wrapper} style={{gridTemplateColumns: 'max-content max-content'}}>
         <div style={{position: 'relative'}}>
           <div className={styles.background}></div>
           <div className={styles.phone}></div>
