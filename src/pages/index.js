@@ -1,6 +1,7 @@
 import React from "react"
 import Hero from "../sections/hero"
 import Intro from "../sections/intro"
+import Features from "../sections/features"
 import FeaturesLeft from "../sections/featuresLeft"
 import Testimonials from "../sections/testimonials"
 import Layout from "../components/layout"
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Hero />
     <Intro />
+    <Features />
     <FeaturesLeft />
     <Testimonials />
   </Layout>
