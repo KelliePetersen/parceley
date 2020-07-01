@@ -31,7 +31,37 @@
   display: inline-block;
 }
 
+.heading {
+  color: $black;
+  margin-bottom: 20px;
+}
+
+.subheading {
+  color: $grey;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
 .card {
   display: grid;
   grid-template-columns: 50px 320px;
+  column-gap: 20px;
+}
+
+.icon {
+  background-color: #333;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.title {
+  color: #4d4d4d;
+  margin: 0 0 10px 0;
+}
+
+.description {
+  color: $light;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
