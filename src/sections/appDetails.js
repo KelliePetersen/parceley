@@ -3,7 +3,7 @@ import styles from './appDetails.module.scss'
 
 const AppDetails = () => {
   return (
-    <section className={styles.appDetails} id="appDetails">
+    <section className={styles.appDetails} id="features">
       <div className={styles.wrapper}>
         <div style={{position: 'relative'}}>
           <div className={styles.background}></div>

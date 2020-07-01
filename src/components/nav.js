@@ -16,7 +16,7 @@ const Nav = ({ styling, buttonState }) => {
         <li><Link to="/#about">About</Link></li>
         <li><Link to="/#features">Features</Link></li>
         <li><Link to="/#services">Recipes</Link></li>
-        <li><Link to="/#contact">Contact</Link></li>
+        <li><Link to="/#testimonials">Testimonials</Link></li>
         <li><Link to="/#signup" className={button ? styles.cta : undefined}>Sign Up</Link></li>
       </ul>
     </nav>
