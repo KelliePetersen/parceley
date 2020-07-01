@@ -4,7 +4,7 @@ import AppDescription from '../components/appDescription'
 
 const FeaturesLeft = () => {
   return (
-    <section className={styles.featuresLeft} id="features">
+    <section className={styles.featuresLeft}>
       <div className={styles.wrapper}>
         <div style={{position: 'relative'}}>
           <div className={styles.background}></div>

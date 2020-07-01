@@ -1,13 +1,13 @@
 @import '../styles/variables';
 
-.featuresLeft {
+.features {
   margin: 0 50px;
   padding: 100px 0;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: 500px auto;
   column-gap: 150px;
   width: max-content;
   margin-left: 50px;
