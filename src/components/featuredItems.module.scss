@@ -1,0 +1,29 @@
+@import '../styles/variables';
+
+.featuredItems {
+  margin: 50px;
+  padding: 50px 0;
+}
+
+.wrapper {
+  position: relative;
+  padding: 50px;
+  background-color: $background;
+  border-radius: 10px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.arrows {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: #333;
+  width: 100px;
+  height: 50px;
+}
