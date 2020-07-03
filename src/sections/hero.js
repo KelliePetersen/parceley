@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby"
 import Image from '../components/image'
 import SignUp from '../components/signUp/signUp'
 import SocialMedia from '../components/socialMedia/socialMedia'
@@ -22,10 +23,10 @@ const Hero = () => {
           <Image filename="bowl3.png" />
         </div>
       </div>
-      <div className={styles.scroll}>
+      <Link to="#about" className={styles.scroll}>
         <div className={styles.icon}></div>
         <p style={{display: 'inline-block', margin: '0'}} >Scroll Down</p>
-      </div>
+      </Link>
       <SocialMedia styling={{position: 'absolute', bottom: '50px', right: '50px'}} />
     </div>
   )
