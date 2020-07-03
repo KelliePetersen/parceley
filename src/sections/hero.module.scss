@@ -4,11 +4,12 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .container {
   position: absolute;
-  left: 125px;
+  left: 150px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -28,18 +29,20 @@
 
 .background {
   position: absolute;
-  right: 50px;
-  bottom: -200px;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: $background;
-  height: calc(60vh + 200px);
-  width: 35vw;
+  height: 425px;
+  width: 37vw;
   border-radius: 15px;
   z-index: -1;
 }
 
 .image {
   position: absolute;
-  top: -32.5%;
+  top: 50%;
+  transform: translateY(-49%);
   left: -45%;
-  width: 575px;
+  width: 600px;
 }
