@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from '../components/image'
 import SignUp from '../components/signUp/signUp'
+import SocialMedia from '../components/socialMedia/socialMedia'
 import styles from './hero.module.scss'
 
 const Hero = () => {
@@ -21,6 +22,7 @@ const Hero = () => {
           <Image filename="bowl3.png" />
         </div>
       </div>
+      <SocialMedia styling={{position: 'absolute', bottom: '50px', right: '50px'}} />
     </div>
   )
 }
