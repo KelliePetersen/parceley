@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './featuredItems.module.scss'
+import FeaturedItemCard from './featuredItemCard'
 
 const FeaturedItems = () => {
   return (
@@ -7,10 +8,10 @@ const FeaturedItems = () => {
       <div className={styles.wrapper}>
         <h3 className={styles.heading}>Featured Foods</h3>
         <div className={styles.carousel}>
-          <div style={{width: '20%', height: '150px', backgroundColor: '#333'}}></div>
-          <div style={{width: '20%', height: '150px', backgroundColor: '#333'}}></div>
-          <div style={{width: '20%', height: '150px', backgroundColor: '#333'}}></div>
-          <div style={{width: '20%', height: '150px', backgroundColor: '#333'}}></div>
+          <FeaturedItemCard image="bowl-small.png" title='Grilled Chicken Salad' info='980kj' />
+          <FeaturedItemCard image="bowl-small.png" title='Grilled Chicken Salad' info='980kj' />
+          <FeaturedItemCard image="bowl-small.png" title='Grilled Chicken Salad' info='980kj' />
+          <FeaturedItemCard image="bowl-small.png" title='Grilled Chicken Salad' info='980kj' />
         </div>
         <div className={styles.arrows}>
 
