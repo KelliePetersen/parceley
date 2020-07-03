@@ -22,6 +22,10 @@ const Hero = () => {
           <Image filename="bowl3.png" />
         </div>
       </div>
+      <div className={styles.scroll}>
+        <div className={styles.icon}></div>
+        <p style={{display: 'inline-block', margin: '0'}} >Scroll Down</p>
+      </div>
       <SocialMedia styling={{position: 'absolute', bottom: '50px', right: '50px'}} />
     </div>
   )
