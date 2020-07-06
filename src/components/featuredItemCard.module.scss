@@ -1,24 +1,27 @@
 @import '../styles/variables';
 
+$cardHeight: 120px;
+
 .card {
   position: relative;
-  height: 125px;
-  min-width: 250px;
+  height: $cardHeight;
+  min-width: calc(#{$cardHeight} * 2);
+  width: calc(#{$cardHeight} * 2);
   max-width: 20%;
   background-color: white;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
   padding: 20px 30px 20px 90px;
   border-radius: 10px;
-  margin-left: 65px;
+  margin-left: calc(#{$cardHeight} / 2);
 }
 
 .image {
   position: absolute;
   top: 50%;
-  left: -65px;
+  left: calc(-#{$cardHeight} / 2);
   transform: translateY(-50%);
-  width: 130px;
-  height: 130px;
+  width: calc(#{$cardHeight} + 5px);
+  height: calc(#{$cardHeight} + 5px);
   background-color: #333;
   border-radius: 50%;
 }
