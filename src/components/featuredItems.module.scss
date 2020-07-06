@@ -23,7 +23,24 @@
   position: absolute;
   top: 50px;
   right: 50px;
-  background-color: #333;
-  width: 100px;
-  height: 50px;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  margin-right: 10px;
+}
+
+.arrowRight {
+  background-image: $gradient;
+  box-shadow: 1px 1px 10px $primary;
+  color: white;
 }
