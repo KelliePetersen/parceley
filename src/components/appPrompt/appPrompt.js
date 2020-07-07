@@ -1,5 +1,5 @@
 import React from 'react'
-import SignUp from './signUp'
+import SignUp from '../signUp/signUp'
 import styles from './appPrompt.module.scss'
 
 const AppPrompt = () => {

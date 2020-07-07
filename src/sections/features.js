@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from '../components/image'
-import AppDescription from '../components/appDescription'
+import AppDescription from '../components/appDescription/appDescription'
 import styles from './features.module.scss'
 
 const Features = () => {

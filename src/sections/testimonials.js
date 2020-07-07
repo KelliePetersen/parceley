@@ -1,5 +1,5 @@
 import React from 'react'
-import ReviewCard from '../components/reviewCard'
+import ReviewCard from '../components/reviewCard/reviewCard'
 import styles from './testimonials.module.scss'
 
 const Testimonials = () => {

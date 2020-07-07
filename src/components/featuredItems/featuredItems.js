@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './featuredItems.module.scss'
-import FeaturedItemCard from './featuredItemCard'
+import FeaturedItemCard from '../featuredItemCard/featuredItemCard'
 
 const FeaturedItems = () => {
   return (

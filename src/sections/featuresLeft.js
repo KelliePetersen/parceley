@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './features.module.scss'
-import AppDescription from '../components/appDescription'
+import AppDescription from '../components/appDescription/appDescription'
 
 const FeaturesLeft = () => {
   return (

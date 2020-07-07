@@ -1,4 +1,4 @@
-@import '../styles/mixins';
+@import '../../styles/mixins';
 
 .container {
   width: max-content;
@@ -26,13 +26,13 @@
 }
 
 .instagram {
-  background-image: url('../images/instagram.svg');
+  background-image: url('../../images/instagram.svg');
 }
 
 .facebook {
-  background-image: url('../images/facebook.svg');
+  background-image: url('../../images/facebook.svg');
 }
 
 .twitter {
-  background-image: url('../images/twitter.svg');
+  background-image: url('../../images/twitter.svg');
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
-import MenuButton from "./menuButton"
-import Logo from "./logo"
-import Nav from "./nav"
+import MenuButton from "../menuButton/menuButton"
+import Logo from "../logo/logo"
+import Nav from "../nav/nav"
 import styles from "./header.module.scss"
 
 const Header = () => {

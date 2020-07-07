@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from './image'
+import Image from '../image'
 import styles from './featuredItemCard.module.scss'
 
 const FeaturedItemCard = ({ image, title, info }) => {

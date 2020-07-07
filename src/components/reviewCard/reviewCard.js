@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from './image'
+import Image from '../image'
 import styles from './reviewCard.module.scss'
 
 const ReviewCard = ({ image, name, location, description }) => {

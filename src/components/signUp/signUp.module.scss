@@ -1,4 +1,4 @@
-@import '../styles/variables';
+@import '../../styles/variables';
 
 $v-padding: 15px;
 $h-padding: 30px;
@@ -17,7 +17,7 @@ $h-padding: 30px;
 }
 
 .icon {
-  background-image: url("../images/email.svg");
+  background-image: url("../../images/email.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

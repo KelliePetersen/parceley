@@ -1,8 +1,8 @@
 import React from 'react'
-import Logo from './logo'
-import Nav from './nav'
-import SocialMedia from './socialMedia'
-import BackToTop from './backToTop'
+import Logo from '../logo/logo'
+import Nav from '../nav/nav'
+import SocialMedia from '../socialMedia/socialMedia'
+import BackToTop from '../backToTop/backToTop'
 import styles from './footer.module.scss'
 
 const Footer = () => {
