@@ -1,0 +1,11 @@
+@import '../styles/variables';
+
+.logo {
+  font-family: "Script MT Bold";
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  & > span {
+    color: $primary;
+  }
+}

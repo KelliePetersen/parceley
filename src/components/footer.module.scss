@@ -12,6 +12,11 @@
   margin: 30px 0;
 }
 
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
 .copyright {
   font-size: 0.875rem;
   font-weight: 500;

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import MenuButton from "./menuButton"
+import Logo from "./logo"
 import styles from "./header.module.scss"
 
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
     <header className={`${styles.header} ${navStyle && styles.active}`}>
       <div style={{display: 'flex', alignItems: 'center'}}>
         <MenuButton styling={{marginRight: '20px'}} />
-        <Link className={styles.logo} to="/#">Parc<span>e</span>l<span>e</span>y</Link>
+        <Logo />
       </div>
       <nav className={styles.nav}>
         <ul className={styles.list}>
