@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
 import MenuButton from "./menuButton"
 import Logo from "./logo"
+import Nav from "./nav"
 import styles from "./header.module.scss"
 
 const Header = () => {
@@ -19,16 +19,7 @@ const Header = () => {
         <MenuButton styling={{marginRight: '20px'}} />
         <Logo />
       </div>
-      <nav className={styles.nav}>
-        <ul className={styles.list}>
-          <li><Link to="/#">Home</Link></li>
-          <li><Link to="/#about">About</Link></li>
-          <li><Link to="/#features">Features</Link></li>
-          <li><Link to="/#services">Recipes</Link></li>
-          <li><Link to="/#contact">Contact</Link></li>
-          <li><Link to="/#signup" className={styles.cta}>Sign Up</Link></li>
-        </ul>
-      </nav>
+      <Nav />
     </header>
   )
 }
