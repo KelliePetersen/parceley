@@ -7,7 +7,7 @@ const Nav = ({ styling, buttonState }) => {
 
   useEffect(() => {
     setButton(buttonState)
-  }, [])
+  }, [buttonState])
 
   return (
     <nav className={styles.nav} style={styling}>
@@ -17,7 +17,7 @@ const Nav = ({ styling, buttonState }) => {
         <li><Link to="/#features">Features</Link></li>
         <li><Link to="/#services">Recipes</Link></li>
         <li><Link to="/#contact">Contact</Link></li>
-        <li><Link to="/#signup" className={button && styles.cta}>Sign Up</Link></li>
+        <li><Link to="/#signup" className={button ? styles.cta : undefined}>Sign Up</Link></li>
       </ul>
     </nav>
   )
