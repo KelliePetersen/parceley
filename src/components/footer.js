@@ -1,12 +1,19 @@
 import React from 'react'
-import BackToTop from './backToTop'
+import Logo from './logo'
+import Nav from './nav'
 import SocialMedia from './socialMedia'
+import BackToTop from './backToTop'
 import styles from './footer.module.scss'
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <SocialMedia />
+      <div className={styles.grid}>
+        <Logo />
+        <Nav styling={{marginLeft: 'auto', width: '500px'}} />
+        <p className={styles.text}>Anywhere, anytime. Enjoy your sweet meal.</p>
+        <SocialMedia styling={{marginLeft: 'auto'}} />
+      </div>
       <div className={styles.divider}></div>
       <div className={styles.flexbox}>
         <p className={styles.copyright}>

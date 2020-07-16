@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from "gatsby"
 import styles from './nav.module.scss'
 
-const Nav = () => {
+const Nav = ({ styling }) => {
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.nav} style={styling}>
       <ul className={styles.list}>
         <li><Link to="/#">Home</Link></li>
         <li><Link to="/#about">About</Link></li>

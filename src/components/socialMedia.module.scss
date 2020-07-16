@@ -1,5 +1,9 @@
 @import '../styles/mixins';
 
+.container {
+  width: max-content;
+}
+
 .social {
   position: relative;
   width: 40px;

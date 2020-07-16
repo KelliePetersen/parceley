@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './socialMedia.module.scss'
 
-const SocialMedia = () => {
+const SocialMedia = ({ styling }) => {
   return (
-    <div>
+    <div className={styles.container} style={styling}>
       <a target="_blank" href="https://www.instagram.com/parchotsoftware" className={styles.social}>
         <div className={styles.instagram}></div>
       </a>
