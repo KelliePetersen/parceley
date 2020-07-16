@@ -19,7 +19,7 @@ const Header = () => {
         <MenuButton styling={{marginRight: '20px'}} />
         <Logo />
       </div>
-      <Nav />
+      <Nav buttonState={true} />
     </header>
   )
 }
