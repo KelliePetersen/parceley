@@ -18,7 +18,9 @@ const Footer = () => {
       <div className={styles.flexbox}>
         <p className={styles.copyright}>
           © {new Date().getFullYear()} Parceley <span className={styles.line}>|</span> 
-          <span className={styles.attribution}>Design by <a href="https://www.parchot.com" target="_blank">Parchot</a></span>
+          <span className={styles.attribution}>Design by 
+            <a href="https://www.parchot.com" target="_blank" rel="noreferrer">Parchot</a>
+          </span>
         </p>
         <BackToTop />
       </div>
