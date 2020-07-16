@@ -2,24 +2,24 @@
 
 .app {
   background-color: #f9f9f9;
-  padding: 100px 0;
-  margin: 100px 50px 50px;
+  padding: 80px 0;
+  margin: 100px 50px 100px;
   border-radius: 20px;
 }
 
 .phone {
   position: absolute;
-  width: 250px;
-  height: 450px;
+  width: 300px;
+  height: 500px;
   background-color: #333;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 250px auto;
+  grid-template-columns: 300px auto;
   column-gap: 100px;
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 900px;
 }
 
 .heading {
