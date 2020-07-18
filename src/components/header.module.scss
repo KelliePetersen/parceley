@@ -1,15 +1,26 @@
+@import './mixins.scss';
+
 .header {
   position: fixed;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+  height: 80px;
+  padding: 0 50px;
   z-index: 10;
   letter-spacing: 1px;
   transition: background 0.2s;
 }
 
 .nav {
-  width: max-content;
+  display: none;
+  width: 40%;
+  max-width: 600px;
+  min-width: max-content;
+  @include respond-to('tablet-large') {
+    display: block;
+  }
 }
 
 .list {
@@ -17,9 +28,10 @@
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  column-gap: 40px;
   justify-content: space-between;
   font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.1px;
   transition: color 0.5s;
 
   & > li:hover > a, & a:focus {
@@ -30,6 +42,7 @@
 .logo {
   font-family: "Script MT Bold";
   font-weight: 700;
+  font-size: 1.5rem;
 }
 
 
