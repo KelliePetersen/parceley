@@ -8,21 +8,21 @@
 
 .container {
   position: absolute;
-  left: 150px;
+  left: 125px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .heading {
   color: $black;
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1.25;
 }
 
 .subheading {
   font-size: 1rem;
   color: $light;
-  line-height: 1.75;
+  line-height: 2;
   max-width: 500px;
 }
 
@@ -39,7 +39,7 @@
 
 .image {
   position: absolute;
-  top: -25%;
-  left: -40%;
-  width: 500px;
+  top: -32.5%;
+  left: -45%;
+  width: 575px;
 }

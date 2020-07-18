@@ -11,7 +11,8 @@ const Hero = () => {
           Delicious food <br />is waiting for you
         </h1>
         <p className={styles.subheading}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maec enas pharetra sit amet nunc in pulvinar.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+          Maec enas pharetra sit amet nunc in pulvinar.
         </p>
         <SignUp />
       </div>
