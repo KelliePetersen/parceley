@@ -24,7 +24,7 @@ const Header = () => {
           <li><Link to="/#features">Features</Link></li>
           <li><Link to="/#services">Recipes</Link></li>
           <li><Link to="/#contact">Contact</Link></li>
-          <li className={styles.cta}><Link to="/#signup">Sign Up</Link></li>
+          <li><Link to="/#signup" className={styles.cta}>Sign Up</Link></li>
         </ul>
       </nav>
     </header>

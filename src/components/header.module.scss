@@ -36,7 +36,7 @@
   letter-spacing: -0.1px;
   transition: color 0.5s;
 
-  & > li:hover > a, & a:focus {
+  & > li:hover > a:not(.cta), & a:not(.cta):focus {
     color: $primary;
   }
 }
@@ -51,8 +51,16 @@
   }
 }
 
-
+.cta {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-image: $gradient;
+  box-shadow: 2px 2px 10px $primary;
+  color: white;
+}
 
 .active {
-
+  .nav {
+    display: none;
+  }
 }
