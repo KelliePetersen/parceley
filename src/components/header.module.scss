@@ -1,4 +1,5 @@
-@import './mixins.scss';
+@import './mixins';
+@import './variables';
 
 .header {
   position: fixed;
@@ -11,6 +12,7 @@
   z-index: 10;
   letter-spacing: 1px;
   transition: background 0.2s;
+  color: $black;
 }
 
 .nav {
@@ -35,7 +37,7 @@
   transition: color 0.5s;
 
   & > li:hover > a, & a:focus {
-    color: #ff0066;
+    color: $primary;
   }
 }
 
@@ -43,16 +45,14 @@
   font-family: "Script MT Bold";
   font-weight: 700;
   font-size: 1.5rem;
+
+  & > span {
+    color: $primary;
+  }
 }
 
 
 
 .active {
-  .list a {
-    color: #4d4d4d;
 
-    &:focus {
-      color: #ff0066;
-    }
-  }
 }

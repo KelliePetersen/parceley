@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => {
     <header className={`${styles.header} ${navStyle && styles.active}`}>
       <div>
         <button type="button" />
-        <Link className={styles.logo} to="/#">{siteTitle}</Link>
+        <Link className={styles.logo} to="/#">Parc<span>e</span>l<span>e</span>y</Link>
       </div>
       <nav className={styles.nav}>
         <ul className={styles.list}>
