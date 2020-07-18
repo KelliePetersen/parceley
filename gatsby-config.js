@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Parceley | Food Delivery App`,
+    title: `Parceley`,
     description: `A meal, ingredient & recipe delivery app for favored meals from approved restaurants.`,
     author: `Kellie Petersen`,
   },
