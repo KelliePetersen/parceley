@@ -1,4 +1,5 @@
 import React from 'react'
+import SignUp from './signUp';
 import styles from './hero.module.scss'
 
 const Hero = () => {
@@ -11,9 +12,7 @@ const Hero = () => {
         <p className={styles.subheading}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maec enas pharetra sit amet nunc in pulvinar.
         </p>
-        <div>
-          placeholder
-        </div>
+        <SignUp />
       </div>
     </div>
   )
