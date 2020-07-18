@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import styles from "./header.module.scss"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const [navStyle, setNavStyle] = useState(false)
 
   useEffect(() => {
@@ -30,14 +29,6 @@ const Header = ({ siteTitle }) => {
       </nav>
     </header>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header
