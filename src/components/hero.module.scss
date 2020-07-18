@@ -25,3 +25,21 @@
   line-height: 1.75;
   max-width: 500px;
 }
+
+.background {
+  position: absolute;
+  right: 50px;
+  bottom: -200px;
+  background-color: $background;
+  height: calc(60vh + 200px);
+  width: 35vw;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.image {
+  position: absolute;
+  top: -25%;
+  left: -40%;
+  width: 500px;
+}

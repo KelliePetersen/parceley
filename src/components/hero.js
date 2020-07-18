@@ -1,5 +1,6 @@
 import React from 'react'
-import SignUp from './signUp';
+import Image from './image'
+import SignUp from './signUp'
 import styles from './hero.module.scss'
 
 const Hero = () => {
@@ -13,6 +14,11 @@ const Hero = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maec enas pharetra sit amet nunc in pulvinar.
         </p>
         <SignUp />
+      </div>
+      <div className={styles.background}>
+        <div className={styles.image}>
+          <Image filename="bowl3.png" />
+        </div>
       </div>
     </div>
   )
