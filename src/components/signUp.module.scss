@@ -16,6 +16,17 @@ $h-padding: 30px;
   width: 325px;
 }
 
+.icon {
+  background-image: url("../images/email.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 11px;
+  width: 20px;
+  display: inline-block;
+  margin-right: 7.5px;
+}
+
 .label {
   position: absolute;
   top: 50%;
