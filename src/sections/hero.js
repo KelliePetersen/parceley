@@ -1,6 +1,6 @@
 import React from 'react'
-import Image from './image'
-import SignUp from './signUp'
+import Image from '../components/image'
+import SignUp from '../components/signUp'
 import styles from './hero.module.scss'
 
 const Hero = () => {
