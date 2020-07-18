@@ -1,35 +1,34 @@
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import styles from "./header.module.scss"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = ({ siteTitle }) => {
+  const [navStyle, setNavStyle] = useState(false)
+
+  useEffect(() => {
+    let windowState = () => window.scrollY ? setNavStyle(true) : setNavStyle(false)
+    windowState();
+    document.addEventListener('scroll', windowState)
+  }, [])
+  
+  return (
+    <header className={`${styles.header} ${navStyle && styles.active}`}>
+      <button type="button" />
+      <Link className={styles.logo} to="/#">{siteTitle}</Link>
+      <nav className={styles.nav}>
+        <ul className={styles.list}>
+          <li><Link to="/#">Home</Link></li>
+          <li><Link to="/#about">About</Link></li>
+          <li><Link to="/#features">Features</Link></li>
+          <li><Link to="/#services">Recipes</Link></li>
+          <li><Link to="/#contact">Contact</Link></li>
+          <li className={styles.cta}><Link to="/#signup">Sign Up</Link></li>
+        </ul>
+      </nav>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
