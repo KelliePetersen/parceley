@@ -14,8 +14,10 @@ const Header = ({ siteTitle }) => {
   
   return (
     <header className={`${styles.header} ${navStyle && styles.active}`}>
-      <button type="button" />
-      <Link className={styles.logo} to="/#">{siteTitle}</Link>
+      <div>
+        <button type="button" />
+        <Link className={styles.logo} to="/#">{siteTitle}</Link>
+      </div>
       <nav className={styles.nav}>
         <ul className={styles.list}>
           <li><Link to="/#">Home</Link></li>
