@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
+import MenuButton from "./menuButton"
 import styles from "./header.module.scss"
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
   return (
     <header className={`${styles.header} ${navStyle && styles.active}`}>
       <div>
-        <button type="button" />
+        <MenuButton />
         <Link className={styles.logo} to="/#">Parc<span>e</span>l<span>e</span>y</Link>
       </div>
       <nav className={styles.nav}>
