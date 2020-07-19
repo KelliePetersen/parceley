@@ -6,6 +6,7 @@ import Header from "./header/header"
 import Footer from "./footer/footer"
 import AppPrompt from "./appPrompt/appPrompt"
 import "./layout.css"
+import "./responsive.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
