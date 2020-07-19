@@ -2,13 +2,8 @@
 @import '../../styles/variables';
 
 .nav {
-  display: none;
-  width: 40%;
+  width: 60%;
   max-width: 600px;
-  min-width: max-content;
-  @include respond-to('tablet-large') {
-    display: block;
-  }
 }
 
 .list {
@@ -16,14 +11,32 @@
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: -0.1px;
   transition: color 0.5s;
 
+  @include respond-to('tablet-large') {
+    justify-content: space-between;
+  }
+
   & > li:hover > a:not(.cta), & a:not(.cta):focus {
     color: $primary;
+  }
+}
+
+.active {
+  display: none;
+  @include respond-to('tablet-small') {
+    display: block;
+  }
+}
+
+li:not(.active) {
+  display: none;
+  @include respond-to('tablet-large') {
+    display: block;
   }
 }
 
