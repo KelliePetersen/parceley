@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .footer {
   width: 100%;
@@ -7,9 +8,11 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 30px;
-  margin-bottom: 40px;
+  row-gap: 10px;
+  @include respond-to('tablet-small') {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
 }
 
 .text {
@@ -17,13 +20,24 @@
   line-height: 1.5;
   font-size: 0.9rem;
   width: 200px;
+  margin-bottom: 0;
+}
+
+.social {
+  margin-top: 10px;
+  @include respond-to('tablet-small') {
+    margin: 0 0 0 auto;
+  }
 }
 
 .divider {
   width: 100%;
   height: 1px;
   background-color: #f2f2f2;
-  margin: 30px 0;
+  margin: 20px 0;
+  @include respond-to('tablet') {
+    margin: 40px 0 30px;
+  }
 }
 
 .flexbox {
@@ -46,4 +60,22 @@
 .attribution {
   display: inline-block;
   font-weight: 300;
+}
+
+.backToTop {
+  display: none;
+  @include respond-to('tablet') {
+    display: block;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+  overflow: hidden;
+  height: 1px;
+  @include respond-to('tablet-large') {
+    visibility: visible;
+    overflow: initial;
+    height: auto;
+  }
 }

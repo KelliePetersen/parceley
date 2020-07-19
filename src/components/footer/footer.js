@@ -10,19 +10,21 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.grid}>
         <Logo />
-        <Nav styling={{marginLeft: 'auto', width: '500px'}} />
+        <div className={styles.hidden}><Nav styling={{marginLeft: 'auto', width: '500px'}} /></div>
         <p className={styles.text}>Anywhere, anytime. Enjoy your sweet meal.</p>
-        <SocialMedia styling={{marginLeft: 'auto'}} />
+        <div className={styles.social}>
+          <SocialMedia />
+        </div>
       </div>
       <div className={styles.divider}></div>
       <div className={styles.flexbox}>
         <p className={styles.copyright}>
           © {new Date().getFullYear()} Parceley <span className={styles.line}>|</span> 
-          <span className={styles.attribution}>Design by 
-            <a href="https://www.parchot.com" target="_blank" rel="noreferrer">Parchot</a>
+          <span className={styles.attribution}>Design by
+            <a href="https://www.parchot.com" target="_blank" rel="noreferrer"> Parchot</a>
           </span>
         </p>
-        <BackToTop />
+        <div className={styles.backToTop}><BackToTop /></div>
       </div>
     </footer>
   )
