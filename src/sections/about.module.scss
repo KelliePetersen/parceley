@@ -1,4 +1,5 @@
 @import '../styles/variables';
+@import '../styles/mixins';
 
 .about {
   padding-top: 100px;
@@ -18,8 +19,11 @@
 
 .grid {
   display: grid;
-  grid-template-columns: max-content max-content max-content;
-  column-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
   width: max-content;
   margin: 60px auto 0;
+  @include respond-to('tablet-large') {
+    column-gap: 50px;
+  }
 }

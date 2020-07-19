@@ -1,17 +1,22 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 $cardHeight: 300px;
 
 .card {
-  height: $cardHeight;
-  min-width: $cardHeight;
-  width: $cardHeight;
-  max-width: $cardHeight;
+  height: max-content;
+  width: 250px;
   background-color: white;
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
-  padding: 30px;
   border-radius: 10px;
   text-align: center;
+  @include respond-to('tablet-large') {
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+  }
+  @include respond-to('desktop') {
+    height: $cardHeight;
+    width: $cardHeight;
+  }
 }
 
 .image {
