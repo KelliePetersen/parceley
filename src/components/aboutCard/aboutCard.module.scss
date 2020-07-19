@@ -6,10 +6,12 @@ $cardHeight: 300px;
 .card {
   height: max-content;
   width: 250px;
+  max-width: 25vw;
   background-color: white;
   border-radius: 10px;
   text-align: center;
   @include respond-to('tablet-large') {
+    max-width: auto;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
     padding: 30px;
   }
@@ -21,6 +23,8 @@ $cardHeight: 300px;
 
 .image {
   width: 90px;
+  max-width: 20vw;
+  max-height: 20vw;
   height: 90px;
   background-color: $primary;
   border-radius: 50%;
@@ -34,6 +38,10 @@ $cardHeight: 300px;
 }
 
 .description {
+  display: none;
   color: $grey;
   font-size: 0.875rem;
+  @include respond-to('tablet') {
+    display: block;
+  }
 }
