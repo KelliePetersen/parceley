@@ -4,7 +4,9 @@ import styles from './socialMedia.module.scss'
 const SocialMedia = ({ styling }) => {
   return (
     <div className={styles.container} style={styling}>
-      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/parchotsoftware" className={styles.social}>
+      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/parchotsoftware" className={styles.social}
+        style={{marginLeft: '0'}}
+      >
         <div className={styles.instagram}></div>
       </a>
       <a target="_blank" rel="noreferrer" href="https://www.facebook.com/parchotsoftware" className={styles.social}>
