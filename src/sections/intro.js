@@ -6,7 +6,9 @@ const Intro = () => {
   return (
     <section className={styles.intro}>
       <div className={styles.wrapper}>
-        <IntroItemCard image='bowl-small.png' title='Grilled Chicken Salad' description='Real chicken' info='980kj' />
+        <div style={{marginLeft: 'auto'}}>
+          <IntroItemCard image='bowl-small.png' title='Grilled Chicken Salad' description='Real chicken' info='980kj' />
+        </div>
         <IntroItemCard image='bowl-small.png' title='Grilled Chicken Salad' description='Real chicken' info='980kj' />
         <div className={styles.container}>
           <h2 className={styles.heading}>Delicious food <br />is waiting for you</h2>

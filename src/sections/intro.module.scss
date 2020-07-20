@@ -1,21 +1,39 @@
 @import '../styles/variables';
+@import '../styles/mixins';
 
 .intro {
   padding-top: 200px;
-  margin: 50px 50px 100px;
+  margin: 50px 30px 100px;
+  display: none;
+  @include respond-to('tablet') {
+    display: block;
+    margin: 50px 50px 100px;
+  }
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 50px;
+  row-gap: 220px;
   margin: 0 auto;
   max-width: 1200px;
+  @include respond-to('desktop') {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
 }
 
 .container {
-  margin: auto 0 0 auto;
   max-width: 450px;
+  text-align: center;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  margin: 0 auto;
+  @include respond-to('desktop') {
+    margin: auto 0 0 auto;
+    text-align: left;
+    grid-column: 3 / 4;
+  }
 }
 
 .heading {
