@@ -3,7 +3,10 @@
 
 .app {
   padding-top: 100px;
-  margin: 0 0 80px;
+  margin: 0;
+  @include respond-to('tablet') {
+    margin: 0 0 80px;
+  }
   @include respond-to('tablet-large') {
     margin: 0 50px 80px;
   }
@@ -19,7 +22,7 @@
   position: absolute;
   top: -50px;
   width: 300px;
-  height: 500px;
+  height: 450px;
   background-color: #333;
   display: none;
   @include respond-to('tablet') {
