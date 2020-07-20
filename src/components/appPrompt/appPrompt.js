@@ -12,7 +12,7 @@ const AppPrompt = () => {
           </div>
           <div>
             <h2 className={styles.heading}>Get the App</h2>
-            <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+            <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Maec enas pharetra sit amet nunc in pulvinar.</p>
             <SignUp />
           </div>

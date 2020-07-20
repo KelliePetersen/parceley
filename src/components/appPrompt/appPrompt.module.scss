@@ -52,9 +52,15 @@
 
 .heading {
   color: $black;
+  margin-bottom: 0;
 }
 
 .text {
   color: $light;
   line-height: 2;
+  margin: 15px 0 25px;
+  max-width: 450px;
+  @include respond-to('tablet-small') {
+    margin: 25px 0 40px;
+  }
 }
