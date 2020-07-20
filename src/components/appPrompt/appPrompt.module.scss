@@ -1,9 +1,12 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .app {
   padding-top: 100px;
-  margin: 0 50px 100px;
-  border-radius: 20px;
+  margin: 0 0 80px;
+  @include respond-to('tablet-large') {
+    margin: 0 50px 80px;
+  }
 }
 
 .wrapper {
@@ -14,17 +17,34 @@
 
 .phone {
   position: absolute;
+  top: -50px;
   width: 300px;
   height: 500px;
   background-color: #333;
+  display: none;
+  @include respond-to('tablet') {
+    display: block;
+  }
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 300px auto;
-  column-gap: 100px;
+  width: max-content;
+  max-width: 90%;
   margin: 0 auto;
-  max-width: 900px;
+  @include respond-to('tablet') {
+    display: grid;
+    column-gap: 40px;
+    grid-template-columns: 300px auto;
+    margin: 0 auto 0 -100px;
+  }
+  @include respond-to('tablet-large') {
+    margin: 0 auto 0 30px;
+
+  }
+  @include respond-to('desktop') {
+    column-gap: 100px;
+    margin: 0 auto;
+  }
 }
 
 .heading {
