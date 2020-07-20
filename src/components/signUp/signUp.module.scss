@@ -1,9 +1,12 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 $v-padding: 15px;
 $h-padding: 30px;
 
 .form {
+  position: relative;
+  width: max-content;
   font-size: 0.875rem;
   margin: 40px 0 0;
 }
@@ -14,6 +17,7 @@ $h-padding: 30px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
   padding: $v-padding $h-padding;
   width: 325px;
+  max-width: calc(100vw - 60px);
 }
 
 .icon {
@@ -36,7 +40,10 @@ $h-padding: 30px;
 }
 
 .button {
-  padding: $v-padding 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: $v-padding 30px;
   color: white;
   background-image: $gradient;
   border: none;
@@ -44,4 +51,8 @@ $h-padding: 30px;
   box-shadow: 2px 2px 10px $primary;
   cursor: pointer;
   margin-left: 15px;
+  @include respond-to('tablet') {
+    position: initial;
+    padding: $v-padding 40px;
+  }
 }
