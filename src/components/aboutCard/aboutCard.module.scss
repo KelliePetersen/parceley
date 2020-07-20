@@ -33,7 +33,7 @@ $cardHeight: 300px;
 
 .title {
   font-weight: 900;
-  margin-bottom: 10px;
+  margin-bottom: 7.5px;
   letter-spacing: 0.5px;
 }
 
@@ -41,6 +41,7 @@ $cardHeight: 300px;
   display: none;
   color: $grey;
   font-size: 0.875rem;
+  line-height: 1.75;
   @include respond-to('tablet') {
     display: block;
   }
