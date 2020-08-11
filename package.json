@@ -2,7 +2,7 @@
   "name": "parceley",
   "private": true,
   "description": "A Gatsby static website for Parceley - a healthy meal shipping company",
-  "version": "1.0",
+  "version": "0.1.0",
   "author": "Kellie Petersen",
   "dependencies": {
     "gatsby": "^2.23.12",
