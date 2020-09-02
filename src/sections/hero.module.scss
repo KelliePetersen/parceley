@@ -55,23 +55,3 @@
   left: -45%;
   width: 600px;
 }
-
-.scroll {
-  position: absolute;
-  left: 50%;
-  bottom: 50px;
-  transform: translateX(-50%);
-  font-size: 0.875rem;
-  color: #555;
-}
-
-.icon {
-  background-image: url('../images/mouse.svg');
-  width: 10px;
-  height: 15px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  margin-right: 5px;
-}
