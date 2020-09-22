@@ -2,8 +2,12 @@
 @import '../../styles/variables';
 
 .nav {
-  width: 60%;
+  width: auto;
   max-width: 600px;
+  margin-left: 10px;
+  @include respond-to('tablet-large') {
+    width: 60vw;
+  }
 }
 
 .list {

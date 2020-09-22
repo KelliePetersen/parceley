@@ -15,11 +15,11 @@ const Header = () => {
   
   return (
     <header className={`${styles.header} ${navStyle && styles.active}`}>
+      <Logo styling={{marginRight: '20px'}} />
       <div style={{display: 'flex', alignItems: 'center'}}>
-        <Logo styling={{marginRight: '20px'}} />
         <MenuButton />
+        <Nav buttonState={true} />
       </div>
-      <Nav buttonState={true} />
     </header>
   )
 }
