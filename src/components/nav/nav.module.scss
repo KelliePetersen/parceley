@@ -2,9 +2,13 @@
 @import '../../styles/variables';
 
 .nav {
+  display: none;
   width: auto;
   max-width: 600px;
   margin-left: 10px;
+  @include respond-to('tablet-small') {
+    display: block;
+  }
   @include respond-to('tablet-large') {
     width: 60vw;
   }
