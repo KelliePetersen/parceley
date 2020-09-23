@@ -11,6 +11,7 @@ const IntroItemCard = ({ image, title, description, info }) => {
       <p className={styles.title}>{title}</p>
       <p className={styles.description}>{description}</p>
       <p className={styles.info}>{info}</p>
+      <div className={styles.icon} />
     </div>
   )
 }
