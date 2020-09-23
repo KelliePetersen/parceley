@@ -7,9 +7,9 @@ const Intro = () => {
     <section className={styles.intro}>
       <div className={styles.wrapper}>
         <div style={{marginLeft: 'auto'}}>
-          <IntroItemCard image='bowl-small.png' title='Grilled Chicken Salad' description='Real chicken' info='980kj' />
+          <IntroItemCard image='medium1.png' title='Premier Platter' description='Freshly grown produce with free-range eggs' info='875kj' />
         </div>
-        <IntroItemCard image='bowl-small.png' title='Grilled Chicken Salad' description='Real chicken' info='980kj' />
+        <IntroItemCard image='medium2.png' title='Grilled Chicken' description='Real chicken with triple seasonings' info='1020kj' />
         <div className={styles.container}>
           <h2 className={styles.heading}>Delicious food <br />is waiting for you</h2>
           <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
