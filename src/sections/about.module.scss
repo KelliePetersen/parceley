@@ -12,13 +12,14 @@
 
 .heading {
   color: $black;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .subheading {
   color: $grey;
   max-width: 450px;
   margin: 0 auto;
+  font-size: 1.125rem;
 }
 
 .grid {
@@ -26,7 +27,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10px;
   width: max-content;
-  margin: 60px auto 0;
+  margin: 90px auto 0;
   @include respond-to('tablet-small') {
     column-gap: 30px;
   }

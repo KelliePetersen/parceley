@@ -12,7 +12,7 @@ $cardHeight: 300px;
   text-align: center;
   @include respond-to('tablet-large') {
     max-width: auto;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
     padding: 30px;
   }
   @include respond-to('desktop') {
@@ -40,8 +40,8 @@ $cardHeight: 300px;
 .description {
   display: none;
   color: $grey;
-  font-size: 0.875rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.5;
   @include respond-to('tablet') {
     display: block;
   }
