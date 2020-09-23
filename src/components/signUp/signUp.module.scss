@@ -7,7 +7,8 @@ $h-padding: 30px;
 .form {
   position: relative;
   width: max-content;
-  font-size: 0.875rem;
+  font-size: 1rem;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -16,7 +17,7 @@ $h-padding: 30px;
   border-radius: 25px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
   padding: $v-padding $h-padding;
-  width: 325px;
+  width: 420px;
   max-width: calc(100vw - 60px);
 }
 
@@ -41,18 +42,18 @@ $h-padding: 30px;
 
 .button {
   position: absolute;
-  right: 0;
-  top: 0;
-  padding: $v-padding 30px;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 11px 25px;
   color: white;
   background-image: $gradient;
   border: none;
   border-radius: 25px;
-  box-shadow: 2px 2px 10px $primary;
+  box-shadow: 1px 1px 5px $primary;
   cursor: pointer;
   margin-left: 15px;
   @include respond-to('tablet') {
-    position: initial;
-    padding: $v-padding 40px;
+    padding: 11px 35px;
   }
 }
