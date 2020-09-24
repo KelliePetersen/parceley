@@ -1,6 +1,6 @@
 @import '../../styles/variables';
 
-$cardHeight: 120px;
+$cardHeight: 130px;
 
 .card {
   position: relative;
@@ -20,20 +20,22 @@ $cardHeight: 120px;
   top: 50%;
   left: calc(-#{$cardHeight} / 2);
   transform: translateY(-50%);
-  width: calc(#{$cardHeight} + 5px);
-  height: calc(#{$cardHeight} + 5px);
-  background-color: #333;
+  width: calc(#{$cardHeight} + 10px);
+  height: calc(#{$cardHeight} + 10px);
   border-radius: 50%;
 }
 
 .title {
-  font-weight: bold;
+  font-weight: 700;
   color: black;
   margin-bottom: 2px;
-  line-height: 1.35;
+  margin-top: 7px;
+  line-height: 1.25;
+  font-size: 1.2rem;
 }
 
 .info {
   color: $secondary;
-  font-size: 0.875rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
