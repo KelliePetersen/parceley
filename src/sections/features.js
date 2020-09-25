@@ -8,9 +8,9 @@ const Features = () => {
     <section className={styles.features} id="features">
         <AppDescription />
         <div className={styles.image}>
-          <Image filename="bowl3.png" styling={{width: '570px'}} />
+          <Image filename="large.png" />
         </div>
-      <div className={styles.background} style={{left: 'auto'}}></div>
+      <div className={styles.background}></div>
     </section>
   )
 }
