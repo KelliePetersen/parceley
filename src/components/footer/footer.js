@@ -9,7 +9,9 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.grid}>
-        <Logo />
+        <div className={styles.logo}>
+          <Logo />
+        </div>
         <div className={styles.hidden}><Nav styling={{marginLeft: 'auto', width: '500px'}} /></div>
         <p className={styles.text}>Anywhere, anytime. Enjoy your sweet meal.</p>
         <div className={styles.social}>
