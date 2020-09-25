@@ -25,7 +25,7 @@
   background-color: white;
   border-radius: 50px;
   display: none;
-  @include respond-to('tablet') {
+  @include respond-to('tablet-large') {
     display: block;
   }
 }
@@ -41,12 +41,10 @@
     margin: 0 auto 0 -100px;
   }
   @include respond-to('tablet-large') {
-    margin: 0 auto 0 30px;
-
+    margin: 0 auto;
   }
   @include respond-to('desktop') {
     column-gap: 30px;
-    margin: 0 auto;
   }
 }
 
