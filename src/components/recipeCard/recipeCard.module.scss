@@ -1,10 +1,10 @@
 @import '../../styles/variables';
 
-$cardWidth: 250px;
+$cardWidth: 300px;
 
 .card {
   position: relative;
-  height: 300px;
+  height: 350px;
   min-width: $cardWidth;
   width: $cardWidth;
   max-width: $cardWidth;
@@ -27,17 +27,17 @@ $cardWidth: 250px;
 
 .title {
   font-weight: 900;
-  font-size: 1.125rem;
+  font-size: 1.375rem;
   margin-bottom: 0;
 }
 
 .description {
   color: $grey;
-  margin: 0;
+  margin: 0 0 5px;
 }
 
 .info {
   color: $secondary;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
 }

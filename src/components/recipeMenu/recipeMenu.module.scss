@@ -18,16 +18,17 @@
   background-color: transparent;
   border: none;
   color: $light;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
   padding: 0;
-  margin-right: 25px;
+  margin-right: 35px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: max-content max-content max-content max-content;
-  column-gap: 40px;
-  row-gap: 40px;
+  column-gap: 30px;
+  row-gap: 30px;
+  max-width: 1290px;
   margin-top: 60px;
 }
