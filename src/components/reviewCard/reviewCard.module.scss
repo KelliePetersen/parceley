@@ -20,11 +20,14 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .name {
   margin: 0 10px 5px 0;
   display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 800;
 }
 
 .location {
@@ -36,7 +39,7 @@
 
 .description {
   color: $grey;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin: 5px 0 5px;
 }
@@ -44,7 +47,7 @@
 .star {
   display: inline-block;
   color: $secondary;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   cursor: default;
 }
 
