@@ -23,6 +23,7 @@
 }
 
 .grid {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10px;
@@ -34,4 +35,20 @@
   @include respond-to('tablet-large') {
     column-gap: 50px;
   }
+}
+
+.nuts {
+  position: absolute;
+  top: -150px;
+  left: -175px;
+  width: 350px;
+  transform: scaleX(-1);
+}
+
+.parsley {
+  position: absolute;
+  bottom: -95px;
+  right: -165px;
+  width: 310px;
+  z-index: -1;
 }

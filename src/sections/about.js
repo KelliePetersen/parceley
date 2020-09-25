@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from '../components/image'
 import AboutCard from '../components/aboutCard/aboutCard'
 import styles from './about.module.scss'
 
@@ -21,6 +22,8 @@ const About = () => {
           title="Fast Delivery" 
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maec enas pharetra sit amet nunc."
         />
+        <div className={styles.nuts}><Image filename="nuts4.png" /></div>
+        <div className={styles.parsley}><Image filename="parsley2.png" /></div>
       </div>
     </section>
   )
