@@ -25,6 +25,7 @@
 }
 
 .image {
+  position: relative;
   width: 570px;
 }
 
@@ -34,4 +35,18 @@
   display: inline-block;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.nuts {
+  position: absolute;
+  top: -60px;
+  left: -335px;
+  width: 850px;
+}
+
+.parsley {
+  position: absolute;
+  bottom: 10px;
+  left: -10px;
+  width: 290px;
 }
