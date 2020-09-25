@@ -5,14 +5,12 @@ import AppDescription from '../components/appDescription/appDescription'
 const FeaturesLeft = () => {
   return (
     <section className={styles.features}>
-      <div className={styles.wrapper} style={{gridTemplateColumns: 'max-content max-content'}}>
-        <div style={{position: 'relative'}}>
-          <div className={styles.background}></div>
-          <div className={styles.phone}></div>
-          <div className={styles.phone} style={{marginLeft: '40px', position: 'relative', top: '40px'}}></div>
-        </div>
-        <AppDescription />
+      <div style={{marginLeft: '-100px', position: 'relative'}}>
+        <div className={styles.background} style={{right: '-75px', width: '800px'}}></div>
+        <div className={styles.phone}></div>
+        <div className={styles.phone} style={{marginLeft: '30px', position: 'relative', top: '40px'}}></div>
       </div>
+      <AppDescription />
     </section>
   )
 }
