@@ -10,6 +10,7 @@ const AppPrompt = () => {
         <div className={styles.grid}>
           <div style={{position: 'relative'}}>
             <div className={styles.phone}>
+              <div className={styles.basil}><Image filename="basil.png" /></div>
               <Image filename="mobile3.png" />
             </div>
           </div>
