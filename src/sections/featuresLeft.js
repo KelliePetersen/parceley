@@ -10,9 +10,10 @@ const FeaturesLeft = () => {
         <div className={styles.background} style={{right: '-50px', width: '750px'}}></div>
         <div className={styles.phone}>
           <Image filename="mobile1.png" />
+          <div className={styles.basil}><Image filename="basil4.png" /></div>
         </div>
         <div className={styles.phone} style={{marginLeft: '30px', position: 'relative', top: '40px'}}>
-        <Image filename="mobile2.png" />
+          <Image filename="mobile2.png" />
         </div>
       </div>
       <AppDescription />
