@@ -21,6 +21,10 @@ const Hero = () => {
         <div className={styles.imageContainer}>
           <div className={styles.image}>
             <Image filename="hero.png" />
+            <div className={styles.nuts}><Image filename="nuts2.png" /></div>
+            <div className={styles.nutsBottom}><Image filename="nuts3.png" /></div>
+            <div className={styles.parsley}><Image filename="parsley3.png" /></div>
+            <div className={styles.herbs}><Image filename="herbs.png" /></div>
           </div>
         </div>
       </div>

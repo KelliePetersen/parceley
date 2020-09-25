@@ -48,6 +48,38 @@
 }
 
 .image {
+  position: relative;
   width: 664px;
   margin-right: -50px;
+}
+
+.nuts {
+  position: absolute;
+  top: 0px;
+  left: -110px;
+  width: 170px;
+  transform: rotate(60deg);
+}
+
+.nutsBottom {
+  position: absolute;
+  bottom: 10px;
+  left: -70px;
+  width: 140px;
+}
+
+.parsley {
+  position: absolute;
+  z-index: -1;
+  top: 25px;
+  right: 15px;
+  width: 200px;
+}
+
+.herbs {
+  position: absolute;
+  z-index: -1;
+  bottom: 10px;
+  right: -20px;
+  width: 290px;
 }
