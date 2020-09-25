@@ -6,6 +6,7 @@
 }
 
 .wrapper {
+  position: relative;
   margin: 0 auto;
   width: max-content;
 }
@@ -31,4 +32,20 @@
   row-gap: 30px;
   max-width: 1290px;
   margin-top: 60px;
+}
+
+.nuts, .nutsBottom {
+  position: absolute;
+  width: 190px;
+}
+
+.nuts {
+  top: -25px;
+  right: -65px;
+  transform: rotate(140deg);
+}
+
+.nutsBottom {
+  bottom: -160px;
+  left: -130px;
 }
