@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from '../components/image'
 import styles from './intro.module.scss'
 import IntroItemCard from '../components/introItemCard/introItemCard'
 
@@ -6,6 +7,7 @@ const Intro = () => {
   return (
     <section className={styles.intro}>
       <div className={styles.wrapper}>
+        <div className={styles.nuts}><Image filename="nuts5.png" /></div>
         <div style={{marginLeft: 'auto'}}>
           <IntroItemCard image='medium1.png' title='Premier Platter' description='Freshly grown produce with free-range eggs' info='875kj' />
         </div>

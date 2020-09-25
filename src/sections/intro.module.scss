@@ -12,6 +12,7 @@
 }
 
 .wrapper {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
@@ -44,4 +45,13 @@
   color: $grey;
   line-height: 1.75;
   margin: 0;
+}
+
+.nuts {
+  position: absolute;
+  top: -175px;
+  left: -350px;
+  width: 420px;
+  transform: scaleX(-1);
+  z-index: -1;
 }
