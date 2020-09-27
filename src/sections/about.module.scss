@@ -3,9 +3,9 @@
 
 .about {
   padding-top: 100px;
-  margin: 50px 20px 150px;
+  margin: 50px 20px 50px;
   text-align: center;
-  @include respond-to('tablet') {
+  @include respond-to('desktop') {
     margin: 50px 50px 150px;
   }
 }

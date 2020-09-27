@@ -2,12 +2,15 @@
 @import '../styles/mixins';
 
 .intro {
-  padding-top: 200px;
-  margin: 50px 30px 100px;
   display: none;
   @include respond-to('tablet') {
+    padding-top: 75px;
     display: block;
-    margin: 50px 50px 100px;
+    margin: 50px;
+  }
+  @include respond-to('desktop') {
+    margin-bottom: 100px;
+    padding-top: 200px;
   }
 }
 
