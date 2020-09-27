@@ -16,7 +16,7 @@
       @content;
     }
   } @else if $breakpoint== "widescreen" {
-    @media (min-width: 1500px) {
+    @media (min-width: 1800px) {
       @content;
     }
   } @else if $breakpoint== "landscape-phone" {

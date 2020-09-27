@@ -28,17 +28,17 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10px;
   width: max-content;
-  margin: 90px auto 0;
+  margin: 50px auto 0;
   @include respond-to('tablet-small') {
     column-gap: 30px;
   }
   @include respond-to('tablet-large') {
     column-gap: 50px;
+    margin-top: 90px;
   }
 }
 
 .nuts {
-  position: absolute;
   top: -150px;
   left: -175px;
   width: 350px;
@@ -46,9 +46,16 @@
 }
 
 .parsley {
-  position: absolute;
   bottom: -95px;
   right: -165px;
   width: 310px;
   z-index: -1;
+}
+
+.nuts, .parsley {
+  position: absolute;
+  display: none;
+  @include respond-to('tablet-large') {
+    display: block;
+  }
 }

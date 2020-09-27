@@ -19,6 +19,10 @@ $cardHeight: 300px;
     height: $cardHeight;
     width: $cardHeight;
   }
+  @include respond-to('widescreen') {
+    height: 325px;
+    width: 350px;
+  }
 }
 
 .image {
@@ -29,13 +33,23 @@ $cardHeight: 300px;
   background-color: $primary;
   border-radius: 50%;
   margin: 0 auto 20px;
+  @include respond-to('widescreen') {
+    height: 120px;
+    width: 120px;
+  }
 }
 
 .title {
   font-weight: 900;
   margin-bottom: 7.5px;
   letter-spacing: 0.5px;
-  font-size: 1.25rem
+  font-size: 1.125rem;
+  @include respond-to('tablet') {
+    font-size: 1.25rem;
+  }
+  @include respond-to('widescreen') {
+    font-size: 1.375rem;
+  }
 }
 
 .description {
