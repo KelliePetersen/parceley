@@ -10,7 +10,7 @@ const Features = () => {
         <div className={styles.image}>
           <div className={styles.nuts}><Image filename="nuts.png" /></div>
           <div className={styles.parsley}><Image filename="parsley.png" /></div>
-          <Image filename="large.png" />
+         <div className={styles.plate}><Image filename="large.png" /></div>
         </div>
       <div className={styles.background}></div>
     </section>

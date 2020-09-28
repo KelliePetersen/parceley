@@ -3,13 +3,21 @@
 
 .features {
   position: relative;
-  width: 75%;
-  max-width: 1200px;
+  width: 90%;
   margin: 0 auto;
+  max-width: 1200px;
   padding: 100px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include respond-to('tablet-large') {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    margin-left: 100px;
+  }
+  @include respond-to('desktop') {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 
 .background {
@@ -27,6 +35,16 @@
 .image {
   position: relative;
   width: 570px;
+  @include respond-to('widescreen') {
+    width: 650px;
+  }
+}
+
+.background, .image {
+  display: none;
+  @include respond-to('tablet-large') {
+    display: block;
+  }
 }
 
 .phone {

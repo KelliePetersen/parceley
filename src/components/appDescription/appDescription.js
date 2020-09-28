@@ -3,7 +3,7 @@ import styles from './appDescription.module.scss'
 
 const AppDescription = () => {
   return (
-    <div>
+    <div className={styles.appDescription}>
       <h2 className={styles.heading}>Delicious food <br />is waiting for you</h2>
       <p className={styles.subheading}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> 
       Maec enas pharetra sit amet nunc.</p>
