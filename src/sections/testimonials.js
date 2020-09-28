@@ -10,10 +10,7 @@ const Testimonials = () => {
       <p className={styles.subheading}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
         Maec enas pharetra sit amet nunc.</p>
       <div className={styles.grid}>
-      <div style={{position: 'relative', left: '-50px', top: '20px'}}>
-        <ReviewCard image="person2.jpg" name="Jane Doe" location="NY, USA" />
-      </div>
-      <div style={{position: 'relative'}}>
+      <div className={styles.one}>
         <ReviewCard 
           image="person1.jpg" name="Jane Doe" 
           location="NY, USA" 
@@ -23,14 +20,19 @@ const Testimonials = () => {
         />
         <div className={styles.spinach}><Image filename="spinach.png" /></div>
       </div>
-      <div style={{position: 'relative', top: '50px', left: '40px'}}>
+      <div className={styles.two}>
+        <ReviewCard image="person2.jpg" name="Jane Doe" location="NY, USA" />
+      </div>
+      <div className={styles.three}>
         <ReviewCard image="person3.jpg" name="Jane Doe" location="NY, USA" />
       </div>
-      <ReviewCard image="person4.jpg" name="Jane Doe" location="NY, USA" />
-      <div style={{position: 'relative', top: '50px', left: '70px'}}>
+      <div className={styles.four}>
+        <ReviewCard image="person4.jpg" name="Jane Doe" location="NY, USA" />
+      </div>
+      <div className={styles.five}>
         <ReviewCard image="person5.jpg" name="Jane Doe" location="NY, USA" />
       </div>
-      <div style={{position: 'relative', top: '20px', left: '70px'}}>
+      <div className={styles.six}>
         <ReviewCard image="person6.jpg" name="Jane Doe" location="NY, USA" />
       </div>
       </div>

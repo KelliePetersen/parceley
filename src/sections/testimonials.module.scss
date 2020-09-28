@@ -1,9 +1,17 @@
 @import '../styles/variables';
+@import '../styles/mixins';
 
 .testimonials {
   text-align: center;
-  margin: 50px 50px 100px;
-  padding-top: 100px;
+  margin: 50px 10px 0;
+  padding-top: 50px;
+  @include respond-to('tablet-small') {
+    margin: 50px 50px 50px;
+  }
+  @include respond-to('desktop') {
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
 }
 
 .subheading {
@@ -12,11 +20,67 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: 325px 370px 325px;
   column-gap: 50px;
   row-gap: 30px;
   width: max-content;
-  margin: 75px auto 0;
+  margin: 50px auto 0;
+  @include respond-to('tablet-large') {
+    margin: 75px auto 0;
+    grid-template-columns: 325px 370px;
+  }
+  @include respond-to('desktop') {
+    grid-template-columns: 325px 370px 325px;
+  }
+}
+
+.one {
+  position: relative;
+  @include respond-to('desktop') {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.two {
+  position: relative;
+  @include respond-to('tablet-large') {
+    top: 50px;
+    left: 100px;
+  }
+  @include respond-to('desktop') {
+    left: -50px;
+    top: 20px;
+  }
+}
+
+.three {
+  position: relative;
+  @include respond-to('tablet-large') {
+    top: 40px;
+    left: -50px;
+  }
+  @include respond-to('desktop') {
+    top: 50px;
+    left: 40px;
+  }
+}
+
+.four, .five, .six {
+  display: none;
+  position: relative;
+  @include respond-to('tablet-large') {
+    display: block;
+  }
+}
+
+.five {
+  top: 50px;
+  left: 60px;
+}
+
+.six {
+  top: 20px;
+  left: 70px;
 }
 
 .spinach {

@@ -1,26 +1,35 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .card {
   position: relative;
   background-color: white;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
   border-radius: 10px;
-  padding: 20px 30px 20px 70px;
+  padding: 20px 30px;
   text-align: left;
   width: 370px;
+  max-width: 80vw;
   height: max-content;
+  @include respond-to('tablet-small') {
+    padding: 20px 30px 20px 70px;
+  }
 }
 
 .image {
-  position: absolute;
-  top: 50%;
-  left: -50px;
-  transform: translateY(-50%);
-  background-color: $grey;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;
+  display: none;
+  @include respond-to('tablet-small') {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    background-color: $grey;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
 }
 
 .name {
@@ -52,15 +61,17 @@
 }
 
 .smallCard {
-  width: 325px;
+  @include respond-to('tablet-large') {
+    width: 325px;
 
-  .image {
-    width: 75px;
-    height: 75px;
-    left: -37.5px;
-  }
-
-  .description {
-    margin: 0;
+    .image {
+      width: 75px;
+      height: 75px;
+      left: -37.5px;
+    }
+  
+    .description {
+      margin: 0;
+    }
   }
 }
