@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby"
 import styles from './featuredItems.module.scss'
 import FeaturedItemCard from '../featuredItemCard/featuredItemCard'
 import ArrowButton from '../arrowButton/arrowButton'
@@ -16,10 +17,8 @@ const FeaturedItems = () => {
             <FeaturedItemCard image="featured4.png" title='Chicken Tomato Mix' info='980kj' imageSize='1230kj' />
           </div>
           <div className={styles.order}>
-            <button type="button" className={styles.button}>
-              <span className={styles.buttonText}>Order Now</span>
-              <ArrowButton />
-            </button>
+            <Link to="#signup" className={styles.buttonText}>Order Now</Link>
+            <ArrowButton />
           </div>
         </div>
       </div>

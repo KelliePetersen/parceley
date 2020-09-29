@@ -43,18 +43,12 @@
   position: absolute;
   top: 50px;
   right: 50px;
-  @include respond-to('tablet-small') {
-    display: block;
-  }
-}
-
-.button {
-  border: none;
-  background-color: transparent;
   cursor: pointer;
   font-weight: bold;
-  display: flex;
   align-items: center;
+  @include respond-to('tablet-small') {
+    display: flex;
+  }
 }
 
 .buttonText {
