@@ -41,7 +41,7 @@
   }
 }
 
-li:not(.active) {
+.nav li:not(.active) {
   display: none;
   @include respond-to('tablet-large') {
     display: block;
