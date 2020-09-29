@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
         <div className={styles.imageContainer}>
           <div className={styles.image}>
-            <Image filename="hero.png" />
+            <div className={styles.main}><Image filename="hero.png" /></div>
             <div className={styles.nuts}><Image filename="nuts2.png" /></div>
             <div className={styles.nutsBottom}><Image filename="nuts3.png" /></div>
             <div className={styles.parsley}><Image filename="parsley3.png" /></div>
@@ -29,7 +29,9 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.background} />
-      <SocialMedia styling={{position: 'absolute', bottom: '50px', right: '50px'}} />
+      <div className={styles.social}>
+        <SocialMedia />
+      </div>
     </div>
   )
 }
