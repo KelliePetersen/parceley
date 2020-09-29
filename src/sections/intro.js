@@ -13,9 +13,9 @@ const Intro = () => {
         </div>
         <IntroItemCard image='medium2.png' title='Grilled Chicken' description='Real chicken with triple seasonings' info='1020kj' />
         <div className={styles.container}>
-          <h2 className={styles.heading}>Delicious food <br />is waiting for you</h2>
-          <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maec enas pharetra sit amet nunc in pulvinar edgar.  adipiscing elit. Pharetra sit amet nunc in barlet.</p>
+          <h2 className={styles.heading}>Your food <br />is waiting for you</h2>
+          <p className={styles.text}>We offer a selection of over 40 meals each week. Don't miss out on the meal of your
+          lifetime. Join us now to know when Parceley is available in your area.</p>
         </div>
       </div>
     </section>
