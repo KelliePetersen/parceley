@@ -2,7 +2,7 @@
 @import '../../styles/mixins';
 
 .recipeMenu {
-  margin: 50px 50px 100px;
+  margin: 50px 0 100px;
 }
 
 .wrapper {
@@ -14,6 +14,7 @@
 .subheading {
   color: $grey;
   font-size: 1.125rem;
+  max-width: 90vw;
 }
 
 .grid {
@@ -21,10 +22,11 @@
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   column-gap: 30px;
   row-gap: 30px;
-  width: calc(100vw - 100px);
+  width: calc(100vw - 50px);
   max-width: 1290px;
-  margin-top: 60px;
+  margin: 60px auto 0;
   @include respond-to('tablet') {
+    width: calc(100vw - 100px);
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: calc(100vw - 100px);
   }
@@ -33,6 +35,7 @@
 .nuts, .nutsBottom {
   position: absolute;
   width: 190px;
+  z-index: -1;
 }
 
 .nuts {

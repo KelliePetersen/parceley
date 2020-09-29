@@ -23,13 +23,17 @@ $cardWidth: 300px;
 }
 
 .container {
-  padding: 20px 30px;
+  padding: 10px 20px;
+  @include respond-to('tablet-small') {
+    padding: 20px 30px;
+  }
 }
 
 .title {
   font-weight: 900;
   font-size: 1.375rem;
-  margin-bottom: 0;
+  margin-bottom: 5px;
+  line-height: 1.25;
 }
 
 .description {
