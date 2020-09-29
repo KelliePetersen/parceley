@@ -16,7 +16,19 @@ const FeaturesLeft = () => {
           <Image filename="mobile2.png" />
         </div>
       </div>
-      <div className={styles.appDescription}><AppDescription /></div>
+      <div className={styles.appDescription}>
+        <AppDescription 
+          heading="Track eating habits and order meals"
+          subheading="Parceley helps you count how many kilojoules you're taking in, and gives you full nutrition details
+          on all of our meals."
+          firstListHeading="Lorem Ipsum"
+          firstListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Maec enas pharetra sit amet nunc."
+          secondListHeading="Lorem Ipsum"
+          secondListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Maec enas pharetra sit amet nunc."
+        />
+      </div>
     </section>
   )
 }

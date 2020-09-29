@@ -13,12 +13,14 @@
 .heading {
   color: $black;
   margin-bottom: 20px;
+  max-width: 470px;
 }
 
 .subheading {
   color: $grey;
   line-height: 2;
   margin-bottom: 40px;
+  max-width: 450px;
 }
 
 .card {
