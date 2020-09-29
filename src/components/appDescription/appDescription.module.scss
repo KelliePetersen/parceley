@@ -25,16 +25,26 @@
 
 .card {
   display: grid;
-  grid-template-columns: 50px auto;
-  max-width: 400px;
+  grid-template-columns: 30px auto;
+  max-width: 380px;
   column-gap: 20px;
 }
 
 .icon {
-  background-color: $primary;
-  height: 50px;
-  width: 50px;
+  position: relative;
+  background-image: $gradient;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
+
+  &::after {
+    content: "";
+    @include centered;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
 }
 
 .title {
