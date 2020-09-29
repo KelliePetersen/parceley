@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import MenuButton from "../menuButton/menuButton"
+import ModalMenu from "../modalMenu/modalMenu"
 import Logo from "../logo/logo"
 import Nav from "../nav/nav"
 import styles from "./header.module.scss"
@@ -14,13 +15,16 @@ const Header = () => {
   }, [])
   
   return (
-    <header className={`${styles.header} ${navStyle && styles.active}`}>
-      <Logo styling={{marginRight: '20px'}} />
-      <div style={{display: 'flex', alignItems: 'center'}}>
-        <MenuButton />
-        <Nav buttonState={true} />
-      </div>
-    </header>
+    <>
+      <header className={`${styles.header} ${navStyle && styles.active}`}>
+        <Logo styling={{marginRight: '20px'}} />
+        <div style={{display: 'flex', alignItems: 'center'}}>
+          <MenuButton />
+          <Nav buttonState={true} />
+        </div>
+      </header>
+      <ModalMenu />
+    </>
   )
 }
 
