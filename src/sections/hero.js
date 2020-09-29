@@ -13,7 +13,7 @@ const Hero = () => {
           Fresh. Free range. <br /> Food for the <span className={styles.headingFocus}>future</span>.
           </h1>
           <p className={styles.subheading}>
-            Sign up to try to most affordable, healthy meal kits in Australia.
+            Sign up for the most affordable, healthy meal kits in America.
             Gluten, vegan, and animal-cruelty free.
           </p>
           <SignUp />

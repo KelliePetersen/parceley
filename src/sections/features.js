@@ -10,10 +10,10 @@ const Features = () => {
           heading="Lose weight with our 12-week meal plan"
           subheading="Our plan is rich in protein and essential vitamins, while being low in fats and sugars.
           This study-backed diet will make you healthier than ever!"
-          firstListHeading="Lorem Ipsum"
+          firstListHeading="Lose weight"
           firstListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Maec enas pharetra sit amet nunc."
-          secondListHeading="Lorem Ipsum"
+          secondListHeading="Build muscle"
           secondListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Maec enas pharetra sit amet nunc."
         />

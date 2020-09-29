@@ -21,10 +21,10 @@ const FeaturesLeft = () => {
           heading="Track eating habits and order meals"
           subheading="Parceley helps you count how many kilojoules you're taking in, and gives you full nutrition details
           on all of our meals."
-          firstListHeading="Lorem Ipsum"
+          firstListHeading="Eat healthy"
           firstListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Maec enas pharetra sit amet nunc."
-          secondListHeading="Lorem Ipsum"
+          secondListHeading="Order online"
           secondListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Maec enas pharetra sit amet nunc."
         />

@@ -13,8 +13,8 @@ const FeaturedItems = () => {
           <div className={styles.carousel}>
             <FeaturedItemCard image="featured1.png" title='Mediterranean Salad' info='1040kj' />
             <FeaturedItemCard image="featured2.png" title='Grilled Chicken Salad' info='980kj' imageSize='175px' />
-            <FeaturedItemCard image="featured3.png" title='French Eggs Benedict' info='1120kj' />
-            <FeaturedItemCard image="featured4.png" title='Chicken Tomato Mix' info='980kj' imageSize='1230kj' />
+            <FeaturedItemCard image="featured3.png" title='French Eggs Benedict' info='820kj' />
+            <FeaturedItemCard image="featured4.png" title='Chicken Tomato Mix' info='1175kj' imageSize='1230kj' />
           </div>
           <div className={styles.order}>
             <Link to="#signup" className={styles.buttonText}>Order Now</Link>

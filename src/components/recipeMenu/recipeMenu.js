@@ -13,11 +13,11 @@ const RecipeMenu = () => {
           <RecipeCard image="burger.jpg" title="Vegan Burger" description="Quality imitation meat with low-fat baked fries" info="1460kj" />
           <RecipeCard image="chicken.jpg" title="Barramundi" description="Served with balsamic glaze &amp; cucumber salad" info="1050kj" />
           <RecipeCard image="sushi.jpg" title="Seafood Platter" description="Locally sourced seafood served with garlic sauce" info="1230kj" />
-          <RecipeCard image="taco.jpg" title="Spicy Pork Tacos" description="Chinese-Spanish infusion" info="980kj" />
-          <RecipeCard image="salad.jpg" title="Greeniers Salad" description="A beautiful salad prepared with edible flowers" info="980kj" />
-          <RecipeCard image="oatmeal.jpg" title="Heather's Oatmeal" description="Oatmeal made with fresh whole fruit" info="980kj" />
-          <RecipeCard image="nachos.jpg" title="Loaded Nachos" description="A treat for cheatday" info="1375kj" />
-          <RecipeCard image="drinks.jpg" title="Fruit Cocktails" description="Prepared with a choice of alcohol" info="980kj" />
+          <RecipeCard image="taco.jpg" title="Spicy Pork Tacos" description="Chinese-Spanish infusion with triple seasonings" info="875kj" />
+          <RecipeCard image="salad.jpg" title="Greeniers Salad" description="A beautiful salad prepared with edible flowers" info="760kj" />
+          <RecipeCard image="oatmeal.jpg" title="Heather's Oatmeal" description="Oatmeal made with fresh whole fruit" info="960kj" />
+          <RecipeCard image="nachos.jpg" title="Loaded Nachos" description="A light snack for when you want to treat yourself" info="1375kj" />
+          <RecipeCard image="drinks.jpg" title="Fruit Cocktails" description="Prepared with a choice of alcohol" info="580kj" />
         </div>
         <div className={styles.nuts}><Image filename="nuts2.png" /></div>
         <div className={styles.nutsBottom}><Image filename="nuts2.png" /></div>

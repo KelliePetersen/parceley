@@ -11,7 +11,7 @@ const Testimonials = () => {
       <div className={styles.grid}>
       <div className={styles.one}>
         <ReviewCard 
-          image="person1.jpg" name="Jane Doe" 
+          image="person1.jpg" name="Sarah Wilson" 
           location="NY, USA" 
           description="Parceley is the best mealprep app I've ever tried. 
           I'm finally able to stick to a diet due to how great it tastes!"
@@ -19,19 +19,19 @@ const Testimonials = () => {
         <div className={styles.spinach}><Image filename="spinach.png" /></div>
       </div>
       <div className={styles.two}>
-        <ReviewCard image="person2.jpg" name="Jane Doe" location="NY, USA" />
+        <ReviewCard image="person2.jpg" name="Geoff Hardley" location="GA, USA" />
       </div>
       <div className={styles.three}>
-        <ReviewCard image="person3.jpg" name="Jane Doe" location="NY, USA" />
+        <ReviewCard image="person3.jpg" name="Erik Leoldsen" location="CA, USA" />
       </div>
       <div className={styles.four}>
-        <ReviewCard image="person4.jpg" name="Jane Doe" location="NY, USA" />
+        <ReviewCard image="person4.jpg" name="Jennifer Parker" location="BC, Canada" />
       </div>
       <div className={styles.five}>
-        <ReviewCard image="person5.jpg" name="Jane Doe" location="NY, USA" />
+        <ReviewCard image="person5.jpg" name="Adam Smith" location="NY, USA" />
       </div>
       <div className={styles.six}>
-        <ReviewCard image="person6.jpg" name="Jane Doe" location="NY, USA" />
+        <ReviewCard image="person6.jpg" name="Paul Ramsey" location="AB, Canada" />
       </div>
       </div>
     </section>
