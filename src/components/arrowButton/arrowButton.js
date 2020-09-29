@@ -4,9 +4,11 @@ import styles from './arrowButton.module.scss'
 
 const ArrowButton = ({ styling }) => {
   return (
-    <button type="button" className={styles.button} style={styling}>
-      <Link to="#signup" style={{color: 'white'}}>&rarr;</Link>
-    </button>
+    <Link to="#signup" style={{color: 'white'}}>
+      <button type="button" className={styles.button} style={styling}>
+        &rarr;
+      </button>
+    </Link>
   )
 }
 
