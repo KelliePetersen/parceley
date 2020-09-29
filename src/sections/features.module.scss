@@ -6,48 +6,69 @@
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 100px 0;
+  padding: 50px 0;
   @include respond-to('tablet-large') {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1100px;
+    min-width: 1100px;
     margin-left: 100px;
   }
   @include respond-to('desktop') {
     width: 75%;
     margin: 0 auto;
+    padding: 100px 0;
+  }
+}
+
+.featuresLeft {
+  transform: scale(0.9);
+  min-width: max-content;
+  width: max-content;
+  margin: 0 auto;
+  display: none;
+  @include respond-to('tablet') {
+    display: flex;
+  }
+  @include respond-to('tablet-large') {
+    transform: scale(1);
+  }
+  @include respond-to('desktop') {
+    min-width: 1100px;
+    width: 75%;
   }
 }
 
 .background {
   position: absolute;
   top: calc(50%);
-  right: -50px;
   transform: translateY(-50%);
   background-color: $background;
   height: 375px;
   width: 300px;
   border-radius: 10px;
   z-index: -1;
+  right: -50px;
+  display: none;
+  @include respond-to('desktop') {
+    display: block;
+  }
 }
 
 .image {
+  display: none;
   position: relative;
   width: 570px;
+  @include respond-to('tablet-large') {
+    display: block;
+  }
   @include respond-to('widescreen') {
     width: 650px;
   }
 }
 
-.background, .image {
-  display: none;
-  @include respond-to('tablet-large') {
-    display: block;
-  }
-}
-
 .phone {
+  position: relative;
   width: 300px;
   background-color: white;
   display: inline-block;
@@ -55,6 +76,13 @@
   box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
+.phoneContainer {
+  margin: 0 auto;
+  @include respond-to('desktop') {
+    margin: 0 0 0 -50px;
+    position: relative;
+  }
+}
 .nuts {
   position: absolute;
   top: -60px;
@@ -74,4 +102,11 @@
   width: 135px;
   bottom: -45px;
   left: -55px;
+}
+
+.appDescription {
+  display: none;
+  @include respond-to('desktop') {
+    display: block;
+  }
 }

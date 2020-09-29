@@ -5,8 +5,8 @@ import AppDescription from '../components/appDescription/appDescription'
 
 const FeaturesLeft = () => {
   return (
-    <section className={styles.features}>
-      <div style={{marginLeft: '-50px', position: 'relative'}}>
+    <section className={`${styles.features} ${styles.featuresLeft}`}>
+      <div className={styles.phoneContainer}>
         <div className={styles.background} style={{right: '-50px', width: '750px'}}></div>
         <div className={styles.phone}>
           <Image filename="mobile1.png" />
@@ -16,7 +16,7 @@ const FeaturesLeft = () => {
           <Image filename="mobile2.png" />
         </div>
       </div>
-      <AppDescription />
+      <div className={styles.appDescription}><AppDescription /></div>
     </section>
   )
 }
