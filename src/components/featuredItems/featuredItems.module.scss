@@ -26,32 +26,23 @@
   margin-top: 50px;
 }
 
-.arrows {
+.order {
   position: absolute;
   top: 50px;
   right: 50px;
 }
 
-.arrow {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.button {
   border: none;
+  background-color: transparent;
   cursor: pointer;
   font-weight: bold;
-  padding-bottom: 2.5px;
+  display: flex;
+  align-items: center;
 }
 
-.arrowLeft {
-  background-color: white;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+.buttonText {
   margin-right: 10px;
-}
-
-.arrowRight {
-  background-image: $gradient;
-  box-shadow: 1px 1px 10px $primary;
-  color: white;
 }
 
 .heading {

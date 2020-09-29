@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './featuredItems.module.scss'
 import FeaturedItemCard from '../featuredItemCard/featuredItemCard'
+import ArrowButton from '../arrowButton/arrowButton'
 
 const FeaturedItems = () => {
   return (
@@ -14,9 +15,11 @@ const FeaturedItems = () => {
             <FeaturedItemCard image="featured3.png" title='French Eggs Benedict' info='1120kj' />
             <FeaturedItemCard image="featured4.png" title='Chicken Tomato Mix' info='980kj' imageSize='1230kj' />
           </div>
-          <div className={styles.arrows}>
-            <button type="button" className={`${styles.arrow} ${styles.arrowLeft}`}>&larr;</button>
-            <button type="button" className={`${styles.arrow} ${styles.arrowRight}`}>&rarr;</button>
+          <div className={styles.order}>
+            <button type="button" className={styles.button}>
+              <span className={styles.buttonText}>Order Now</span>
+              <ArrowButton />
+            </button>
           </div>
         </div>
       </div>
