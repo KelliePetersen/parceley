@@ -1,8 +1,12 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .featuredItems {
-  margin: 50px;
   padding: 50px 0;
+  margin-bottom: 50px;
+  @include respond-to('tablet') {
+    margin: 50px;
+  }
 }
 
 .background {
@@ -14,22 +18,34 @@
 
 .wrapper {
   position: relative;
-  padding: 50px;
-  max-width: 1500px;
   margin: 0 auto;
+  padding: 50px;
+  @include respond-to('tablet') {
+    max-width: 1500px;
+  }
 }
 
 .carousel {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  row-gap: 50px;
   margin-top: 50px;
+  margin-left: -40px;
+  transform: scale(0.9);
+  @include respond-to('tablet') {
+    margin-left: 0;
+    transform: scale(1);
+  }
 }
 
 .order {
+  display: none;
   position: absolute;
   top: 50px;
   right: 50px;
+  @include respond-to('tablet-small') {
+    display: block;
+  }
 }
 
 .button {
