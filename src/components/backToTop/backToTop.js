@@ -4,9 +4,11 @@ import styles from './backToTop.module.scss'
 
 const BackToTop = () => {
   return (
-    <button type="button" className={styles.button}>
-      <Link to="#" style={{color: 'white'}}>&uarr;</Link>
-    </button>
+    <Link to="#" style={{color: 'white'}}>
+      <button type="button" className={styles.button}>
+        &uarr;
+      </button>
+    </Link>
   )
 }
 
