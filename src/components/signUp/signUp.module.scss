@@ -16,7 +16,7 @@ $h-padding: 30px;
   border: none;
   border-radius: 25px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
-  padding: $v-padding $h-padding;
+  padding: $v-padding $h-padding $v-padding 60px;
   width: 420px;
   max-width: calc(100vw - 60px);
 }

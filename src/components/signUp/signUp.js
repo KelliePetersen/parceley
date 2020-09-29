@@ -19,7 +19,7 @@ const SignUp = () => {
     <form className={styles.form}>
       <label htmlFor="email" style={{position: 'relative'}}>
         <span className={styles.label}><div className={styles.icon}></div><span id="signup-text">{signUpTextValue}</span></span>
-        <input type="email" name="email" id="email" className={styles.email} onClick={handleClick} />
+        <input type="email" name="email" id="email" required className={styles.email} onClick={handleClick} />
       </label>
       <input type="submit" value={buttonValue} className={styles.button} />
     </form>
