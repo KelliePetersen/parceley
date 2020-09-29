@@ -11,18 +11,9 @@
   width: max-content;
 }
 
-.tab {
-  margin-top: 40px;
-}
-
-.tablink {
-  background-color: transparent;
-  border: none;
-  color: $light;
-  font-size: 1.25rem;
-  font-weight: 600;
-  padding: 0;
-  margin-right: 35px;
+.subheading {
+  color: $grey;
+  font-size: 1.125rem;
 }
 
 .grid {
