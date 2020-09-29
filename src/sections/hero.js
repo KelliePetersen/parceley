@@ -10,11 +10,11 @@ const Hero = () => {
       <div className={styles.container}>
         <div className={styles.textbox}>
           <h1 className={styles.heading}>
-            Delicious food <br />is waiting for you
+          Fresh. Free range. <br /> Food for the <span className={styles.headingFocus}>future</span>.
           </h1>
           <p className={styles.subheading}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-            Maec enas pharetra sit amet nunc in pulvinar.
+            Sign up to try to most affordable, healthy meal kits in Australia.
+            Gluten, vegan, and animal-cruelty free.
           </p>
           <SignUp />
         </div>
