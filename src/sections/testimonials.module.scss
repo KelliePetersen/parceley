@@ -17,6 +17,8 @@
 .subheading {
   color: $light;
   line-height: 1.75;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .grid {
   display: grid;

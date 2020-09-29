@@ -7,16 +7,14 @@ const Testimonials = () => {
   return (
     <section className={styles.testimonials} id="testimonials">
       <h2>What people are saying</h2>
-      <p className={styles.subheading}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-        Maec enas pharetra sit amet nunc.</p>
+      <p className={styles.subheading}>Parceley comes highly rated, recommended and revered by everybody involved in closed testing.</p>
       <div className={styles.grid}>
       <div className={styles.one}>
         <ReviewCard 
           image="person1.jpg" name="Jane Doe" 
           location="NY, USA" 
-          description="Lorem ipsum dolor sit amet, con
-          adipisc elit. Maec enas pharet
-          sit amet nunc consectur."
+          description="Parceley is the best mealprep app I've ever tried. 
+          I'm finally able to stick to a diet due to how great it tastes!"
         />
         <div className={styles.spinach}><Image filename="spinach.png" /></div>
       </div>
