@@ -9,14 +9,14 @@ const AppDescription = ({ heading, subheading, firstListHeading, firstListText, 
       <div className={styles.card}>
         <div className={styles.icon}></div>
         <div>
-          <h4 className={styles.title}>{firstListHeading}</h4>
+          <h3 className={styles.title}>{firstListHeading}</h3>
           <p className={styles.description}>{firstListText}</p>
         </div>
       </div>
       <div className={styles.card}>
         <div className={styles.icon}></div>
         <div>
-          <h4 className={styles.title}>{secondListHeading}</h4>
+          <h3 className={styles.title}>{secondListHeading}</h3>
           <p className={styles.description}>{secondListText}</p>
         </div>
       </div>

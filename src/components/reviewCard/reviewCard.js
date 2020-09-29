@@ -6,7 +6,7 @@ const ReviewCard = ({ image, name, location, description }) => {
   return (
     <div className={`${styles.card} ${description ? undefined : styles.smallCard}`}>
       <div className={styles.image}><Image filename={image} /></div>
-      <h4 className={styles.name}>{name}</h4>
+      <h3 className={styles.name}>{name}</h3>
       <p className={styles.location}>{location}</p>
       <p className={styles.description}>{description}</p>
       <div>
