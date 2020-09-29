@@ -7,23 +7,24 @@ import styles from "./header.module.scss"
 
 const Header = () => {
   const [navStyle, setNavStyle] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     let windowState = () => (window.scrollY > 500) ? setNavStyle(true) : setNavStyle(false)
     windowState();
     document.addEventListener('scroll', windowState)
   }, [])
-  
+
   return (
     <>
       <header className={`${styles.header} ${navStyle && styles.active}`}>
         <Logo styling={{marginRight: '20px'}} />
         <div style={{display: 'flex', alignItems: 'center'}}>
-          <MenuButton />
+          <MenuButton modalOpen={modalOpen} setModalOpen={setModalOpen} />
           <Nav buttonState={true} />
         </div>
       </header>
-      <ModalMenu />
+      <ModalMenu modalOpen={modalOpen} setModalOpen={setModalOpen} />
     </>
   )
 }

@@ -2,8 +2,8 @@
 @import '../../styles/variables';
 
 .modal {
-  // display: none;
-  // visibility: hidden;
+  display: none;
+  visibility: hidden;
   @include centered;
   position: fixed;
   width: 500px;
