@@ -13,7 +13,7 @@ const Image = props => (
               name
               childImageSharp {
                 fluid(maxWidth: 1920, quality: 90) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_noBase64
                 }
               }
             }
