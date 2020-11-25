@@ -2,18 +2,31 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const Image = props => (
+const Image = ({ filename, alt, loading, styling, noBlur }) => (
   <StaticQuery
     query={graphql`
       query {
-        images: allFile {
+        images: allFile (filter: {extension: { regex: "/png|jpg/"}}) {
           edges {
             node {
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 1920, quality: 90) {
-                  ...GatsbyImageSharpFluid_noBase64
+                fluid(maxWidth: 920, quality: 90) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
+          }
+        }
+        noBlurImages: allFile (filter: {extension: { regex: "/png|jpg/"}}) {
+          edges {
+            node {
+              relativePath
+              name
+              childImageSharp {
+                fluid(maxWidth: 920, quality: 90) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }
@@ -24,14 +37,20 @@ const Image = props => (
     
     render={data => {
       const image = data.images.edges.find(n => {
-        return n.node.relativePath.includes(props.filename)
+        return n.node.relativePath.includes(filename)
       })
-      if (!image) {
+
+      const noBlurImage = data.noBlurImages.edges.find(n => {
+        return n.node.relativePath.includes(filename)
+      })
+
+      if (!image && !noBlurImage) {
         return null
       }
 
       const imageFluid = image.node.childImageSharp.fluid
-      return <Img alt={props.alt} fluid={imageFluid} style={props.styling} />
+      const imageFluidNoBlur = noBlurImage.node.childImageSharp.fluid
+      return <Img alt={alt} fluid={noBlur ? imageFluidNoBlur : imageFluid} loading={loading} style={styling} />
     }}
   />
 )
