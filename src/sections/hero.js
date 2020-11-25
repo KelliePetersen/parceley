@@ -21,10 +21,10 @@ const Hero = () => {
         <div className={styles.imageContainer}>
           <div className={styles.image}>
             <div className={styles.main}><Image loading="eager" filename="hero.png" /></div>
-            <div className={styles.nuts}><Image loading="eager" filename="nuts2.png" /></div>
-            <div className={styles.nutsBottom}><Image loading="eager" filename="nuts3.png" /></div>
-            <div className={styles.parsley}><Image loading="eager" filename="parsley3.png" /></div>
-            <div className={styles.herbs}><Image loading="eager" filename="herbs.png" /></div>
+            <div className={styles.nuts}><Image loading="eager" filename="nuts2.png" noBlur="true" /></div>
+            <div className={styles.nutsBottom}><Image loading="eager" filename="nuts3.png" noBlur="true" /></div>
+            <div className={styles.parsley}><Image loading="eager" filename="parsley3.png" noBlur="true" /></div>
+            <div className={styles.herbs}><Image loading="eager" filename="herbs.png" noBlur="true" /></div>
           </div>
         </div>
       </div>

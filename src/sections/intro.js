@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <section className={styles.intro}>
       <div className={styles.wrapper}>
-        <div className={styles.nuts}><Image filename="nuts5.png" /></div>
+        <div className={styles.nuts}><Image filename="nuts5.png" noBlur="true" /></div>
         <div style={{marginLeft: 'auto'}}>
           <IntroItemCard image='medium1.png' title='Premier Platter' description='Freshly grown produce with free-range eggs' info='875kj' />
         </div>

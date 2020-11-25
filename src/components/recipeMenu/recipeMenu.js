@@ -9,8 +9,8 @@ const RecipeMenu = () => {
       <div className={styles.wrapper}>
         <h2 className={styles.heading}>Explore our menu</h2>
         <p className={styles.subheading}>A small preview of the meals available to our special test members.</p>
-        <div className={styles.nuts}><Image filename="nuts2.png" /></div>
-        <div className={styles.nutsBottom}><Image filename="nuts2.png" /></div>
+        <div className={styles.nuts}><Image filename="nuts2.png" noBlur="true" /></div>
+        <div className={styles.nutsBottom}><Image filename="nuts2.png" noBlur="true" /></div>
         <div className={styles.grid}>
           <RecipeCard image="burger.jpg" title="Vegan Burger" description="Quality imitation meat with low-fat baked fries" info="1460kj" />
           <RecipeCard image="chicken.jpg" title="Barramundi" description="Served with balsamic glaze &amp; cucumber salad" info="1050kj" />

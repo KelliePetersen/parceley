@@ -25,8 +25,8 @@ const About = () => {
           title="Easy to Prepare" 
           description="We make it easy. Each meal takes less than an hour to prepare &amp; cook, with enough servings to last for days."
         />
-        <div className={styles.nuts}><Image filename="nuts4.png" /></div>
-        <div className={styles.parsley}><Image filename="parsley2.png" /></div>
+        <div className={styles.nuts}><Image filename="nuts4.png" noBlur="true" /></div>
+        <div className={styles.parsley}><Image filename="parsley2.png" noBlur="true" /></div>
       </div>
     </section>
   )

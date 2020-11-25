@@ -18,8 +18,8 @@ const Features = () => {
           Maec enas pharetra sit amet nunc."
         />
         <div className={styles.image}>
-          <div className={styles.nuts}><Image filename="nuts.png" /></div>
-          <div className={styles.parsley}><Image filename="parsley.png" /></div>
+          <div className={styles.nuts}><Image filename="nuts.png" noBlur="true" /></div>
+          <div className={styles.parsley}><Image filename="parsley.png" noBlur="true" /></div>
          <div className={styles.plate}><Image filename="large.png" /></div>
         </div>
       <div className={styles.background}></div>

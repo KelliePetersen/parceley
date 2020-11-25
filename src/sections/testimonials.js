@@ -16,7 +16,7 @@ const Testimonials = () => {
           description="Parceley is the best mealprep app I've ever tried. 
           I'm finally able to stick to a diet due to how great it tastes!"
         />
-        <div className={styles.spinach}><Image filename="spinach.png" /></div>
+        <div className={styles.spinach}><Image filename="spinach.png" noBlur="true" /></div>
       </div>
       <div className={styles.two}>
         <ReviewCard image="person2.jpg" name="Geoff Hardley" location="GA, USA" />
