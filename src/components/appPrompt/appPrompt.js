@@ -17,7 +17,7 @@ const AppPrompt = () => {
           <div>
             <h2 className={styles.heading}>Get the App</h2>
             <p className={styles.text}>Sign up to receive notifications about development, special offers, and a chance to win free meals.</p>
-            <SignUp />
+            <SignUp label="sign-up" />
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ const Hero = () => {
             Sign up for the most affordable, healthy meal kits in America.
             Gluten, vegan, and animal-cruelty free.
           </p>
-          <SignUp />
+          <SignUp label="email" />
         </div>
         <div className={styles.imageContainer}>
           <div className={styles.image}>
