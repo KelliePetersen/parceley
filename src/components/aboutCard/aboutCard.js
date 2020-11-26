@@ -8,7 +8,7 @@ const AboutCard = ({ image, title, description }) => {
       <div className={styles.image}>
         <div className={styles.icon}><Image filename={image} /></div>
       </div>
-      <p className={styles.title}>{title}</p>
+      <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
     </div>
   )

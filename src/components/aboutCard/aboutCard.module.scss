@@ -48,7 +48,8 @@ $cardHeight: 300px;
 
 .title {
   font-weight: 900;
-  margin-bottom: 7.5px;
+  font-family: 'Lato';
+  margin: 25px auto 15px;
   letter-spacing: 0.5px;
   font-size: 1.125rem;
   @include respond-to('tablet') {

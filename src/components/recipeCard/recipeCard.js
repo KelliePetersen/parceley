@@ -10,7 +10,7 @@ const RecipeCard = ({ image, title, description, info }) => {
         <Image filename={image} />
       </div>
       <div className={styles.container}>
-        <p className={styles.title}>{title}</p>
+        <h3 className={styles.title}>{title}</h3>
         <p className={styles.description}>{description}</p>
         <p className={styles.info}>{info}</p>
         <ArrowButton styling={{position: 'absolute', bottom: '20px', right: '20px'}} />

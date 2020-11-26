@@ -9,7 +9,7 @@ const IntroItemCard = ({ image, title, description, info }) => {
       <div className={styles.image} >
         <Image filename={image} />
       </div>
-      <p className={styles.title}>{title}</p>
+      <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <p className={styles.info}>{info}</p>
       <ArrowButton styling={{position: 'absolute', bottom: '25px', right: '25px'}} />
