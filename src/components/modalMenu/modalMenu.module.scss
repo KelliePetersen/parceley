@@ -20,6 +20,10 @@
 .modalActive {
   display: block;
   visibility: visible;
+  @include respond-to('tablet-large') {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .list {
