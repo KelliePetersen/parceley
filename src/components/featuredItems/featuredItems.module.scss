@@ -21,6 +21,9 @@
   margin: 0 auto;
   padding: 50px;
   @include respond-to('tablet') {
+    max-width: 900px;
+  }
+  @include respond-to('widescreen') {
     max-width: 1500px;
   }
 }
@@ -29,12 +32,19 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   row-gap: 50px;
-  margin-top: 50px;
   margin-left: -40px;
+  width: calc(100% + 80px);
   transform: scale(0.9);
+  justify-items: center;
   @include respond-to('tablet') {
-    margin-left: 0;
+    margin-top: 50px;
+  }
+  @include respond-to('tablet-large') {
     transform: scale(1);
+    grid-template-columns: 1fr 1fr;
+  }
+  @include respond-to('widescreen') {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
