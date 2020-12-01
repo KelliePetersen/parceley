@@ -19,7 +19,8 @@
   height: 3px;
   background-color: #555;
   border-radius: 20%;
-
+  transition: transform 1s;
+  
   &::before, &::after {
     content: "";
     position: absolute;
@@ -28,6 +29,8 @@
     background-color: #555;
     border-radius: 20%;
     left: 0;
+    transition: transform 0.5s;
+    transform-origin: left;
   }
 
   &::before {
@@ -36,5 +39,19 @@
 
   &::after {
     top: -8px;
+  }
+}
+
+.cross {
+  background: rgba(0,0,0,0);
+
+  &::before {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+  
+  &::after {
+    transform: rotate(45deg);
+    top: -10px;
   }
 }
