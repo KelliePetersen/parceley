@@ -5,13 +5,21 @@
   display: none;
   visibility: hidden;
   @include centered;
+  margin-top: 20px;
   position: fixed;
   width: 500px;
   max-width: 90vw;
   height: max-content;
   padding: 30px 40px 40px;
-  z-index: 20;
+  z-index: 15;
   background: white;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 25px;
+}
+
+.modalActive {
+  display: block;
+  visibility: visible;
 }
 
 .list {
@@ -19,7 +27,7 @@
   list-style-type: none;
   display: grid;
   row-gap: 30px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: -0.25px;
   text-align: center;
