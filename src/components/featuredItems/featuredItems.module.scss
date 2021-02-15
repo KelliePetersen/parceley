@@ -23,7 +23,7 @@
   @include respond-to('tablet') {
     max-width: 900px;
   }
-  @include respond-to('widescreen') {
+  @include respond-to('desktop') {
     max-width: 1500px;
   }
 }
@@ -39,12 +39,13 @@
   @include respond-to('tablet') {
     margin-top: 50px;
   }
-  @include respond-to('tablet-large') {
+  @include respond-to('desktop') {
     transform: scale(1);
-    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   @include respond-to('widescreen') {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
   }
 }
 

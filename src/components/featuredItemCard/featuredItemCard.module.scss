@@ -32,7 +32,7 @@ $cardHeight: 130px;
   margin-top: 7px;
   line-height: 1.25;
   font-size: 1rem;
-  @include respond-to('tablet-large') {
+  @include respond-to('widescreen') {
     font-size: 1.2rem;
   }
 }
