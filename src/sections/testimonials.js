@@ -13,7 +13,7 @@ const Testimonials = () => {
         <ReviewCard 
           image="person1.jpg" name="Sarah Wilson" 
           location="NY, USA" 
-          description="Parceley is the best mealprep app I've ever tried. 
+          description="Parceley is the best mealprep app I've ever tried.
           I'm finally able to stick to a diet due to how great it tastes!"
         />
         <div className={styles.spinach}><Image filename="spinach.png" noBlur="true" /></div>

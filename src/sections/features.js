@@ -11,10 +11,10 @@ const Features = () => {
           subheading="Our plan is rich in protein and essential vitamins, while being low in fats and sugars.
           This study-backed diet will make you healthier than ever!"
           firstListHeading="Lose weight"
-          firstListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          firstListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Maec enas pharetra sit amet nunc."
           secondListHeading="Build muscle"
-          secondListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          secondListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Maec enas pharetra sit amet nunc."
         />
         <div className={styles.image}>

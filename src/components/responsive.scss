@@ -4,6 +4,9 @@ h2 {
   font-size: calc(28px + (48 - 28) * ((100vw - 320px) / (800 - 320)));
   
   @include respond-to('tablet') {
+    font-size: 2.5rem;
+  }
+  @include respond-to('widescreen') {
     font-size: 3rem;
   }
 }
@@ -12,7 +15,10 @@ p {
   font-size: 0.875rem;
   line-height: 1.75;
   @include respond-to('tablet-small') {
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.75;
+  }
+  @include respond-to('widescreen') {
+    font-size: 1.125rem;
   }
 }

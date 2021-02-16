@@ -22,10 +22,10 @@ const FeaturesLeft = () => {
           subheading="Parceley helps you count how many kilojoules you're taking in, and gives you full nutrition details
           on all of our meals."
           firstListHeading="Eat healthy"
-          firstListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          firstListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Maec enas pharetra sit amet nunc."
           secondListHeading="Order online"
-          secondListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          secondListText="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Maec enas pharetra sit amet nunc."
         />
       </div>

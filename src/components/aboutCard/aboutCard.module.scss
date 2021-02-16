@@ -63,9 +63,12 @@ $cardHeight: 300px;
 .description {
   display: none;
   color: $grey;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   @include respond-to('tablet') {
     display: block;
+  }
+  @include respond-to('widescreen') {
+    font-size: 1rem;
   }
 }

@@ -47,7 +47,7 @@
   @include respond-to('tablet') {
     font-size: 3rem;
   }
-  @include respond-to('tablet-large') {
+  @include respond-to('widescreen') {
     font-size: 4rem;
   }
 }
@@ -57,11 +57,15 @@
 }
 
 .subheading {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: $light;
   line-height: 2;
-  max-width: 500px;
+  max-width: 475px;
   margin-bottom: 40px;
+  @include respond-to('widescreen') {
+    font-size: 1.125rem;
+    max-width: 500px;
+  }
 }
 
 .background {
@@ -86,7 +90,8 @@
   min-width: 480px;
   margin-right: -50px;
   @include respond-to('desktop') {
-    max-width: 40vw;
+    width: 40vw;
+    max-width: 800px;
   }
 }
 

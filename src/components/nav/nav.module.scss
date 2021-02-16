@@ -10,7 +10,7 @@
     display: block;
   }
   @include respond-to('tablet-large') {
-    width: 60vw;
+    width: 50vw;
   }
 }
 
@@ -20,13 +20,16 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: -0.25px;
   transition: color 0.5s;
 
   @include respond-to('tablet-large') {
     justify-content: space-between;
+  }
+  @include respond-to('widescreen') {
+    font-size: 1rem;
   }
 
   & > li:hover > a:not(.cta), & a:not(.cta):focus {
