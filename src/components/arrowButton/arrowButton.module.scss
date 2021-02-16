@@ -11,4 +11,8 @@
   cursor: pointer;
   padding-bottom: 2.5px;
   font-weight: bold;
+
+  &:hover, &:focus {
+    background-image: $hoverGradient;
+  }
 }

@@ -57,4 +57,7 @@
   background-image: $gradient;
   box-shadow: 2px 2px 10px $primary;
   color: white;
+  &:hover, &:focus {
+    background-image: $hoverGradient;
+  }
 }

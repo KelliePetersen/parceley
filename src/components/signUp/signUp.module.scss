@@ -56,4 +56,7 @@ $h-padding: 30px;
   @include respond-to('tablet') {
     padding: 11px 35px;
   }
+  &:hover, &:focus {
+    background-image: $hoverGradient;
+  }
 }
