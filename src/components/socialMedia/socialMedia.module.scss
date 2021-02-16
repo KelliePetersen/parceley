@@ -1,4 +1,5 @@
 @import '../../styles/mixins';
+@import '../../styles/variables';
 
 .container {
   width: max-content;
@@ -14,6 +15,11 @@
   display: inline-block;
   margin-left: 20px;
   cursor: pointer;
+  transition: background-color 0.25s;
+  outline: none;
+  &:hover, &:focus {
+    background-color: #7dc239;
+  }
 }
 
 .instagram, .facebook, .twitter {
