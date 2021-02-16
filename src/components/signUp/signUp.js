@@ -11,15 +11,18 @@ const SignUp = ({ label }) => {
     window.addEventListener('resize', windowState)
   }, [])
 
-  const handleClick = () => {
+  const handleFocus = () => {
     setSignUpTextValue('');
+  }
+  const handleBlur = () => {
+    setSignUpTextValue('Enter your email');
   }
 
   return (
     <form className={styles.form}>
       <label htmlFor={label} style={{position: 'relative'}}>
         <span className={styles.label}><div className={styles.icon}></div><span id="signup-text">{signUpTextValue}</span></span>
-        <input type="email" name="email" id={label} required className={styles.email} onClick={handleClick} />
+        <input type="email" name="email" id={label} required className={styles.email} onFocus={handleFocus} onBlur={handleBlur} />
       </label>
       <input type="submit" value={buttonValue} className={styles.button} />
     </form>
